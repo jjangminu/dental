@@ -85,6 +85,92 @@ body {
   }
 }
 
+/*tablet*/
+@media (min-width: 600px) and (max-width: 1200px) {
+  /*header*/
+  header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  }
+
+  /*main_menu*/
+  header #main {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 40px;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  header #main .logo {
+    width: 80px;
+    height: 45px;
+    padding-bottom: 5px;
+  }
+  header #main .menu {
+    display: flex;
+    gap: 20px;
+  }
+  header #main .menu li {
+    text-align: center;
+  }
+  header #main .menu a {
+    display: block;
+    padding: 15px 5px;
+  }
+  header #main .menu a:hover {
+    color: #6099ee;
+  }
+  header #main .ham {
+    display: none;
+  }
+  header #main .close {
+    display: none;
+  }
+
+  /*sub_menu*/
+  header #sub {
+    display: flex;
+    width: 100%;
+  }
+  header #sub ul {
+    width: 100%;
+    gap: 20px;
+    justify-content: right;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  header #sub .doc {
+    padding-right: 192px;
+    display: none;
+  }
+  header #sub .con {
+    padding-right: 85px;
+    display: none;
+  }
+  header #sub .rev {
+    padding-right: 115px;
+    display: none;
+  }
+  header #sub .comu {
+    padding-right: 45px;
+    display: none;
+  }
+  header #sub li {
+    text-align: center;
+  }
+  header #sub a {
+    display: block;
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+  header #sub a:hover {
+    color: #6099ee;
+  }
+}
+
 /*pc*/
 @media (min-width: 1200px) {
   /*header*/
