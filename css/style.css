@@ -57,15 +57,20 @@ body {
   header #main .ham a {
     font-size: 1rem;
   }
+  header #main .mobile_menu {
+    display: none;
+    justify-content: space-between;
+    height: 300px;
+    width: 100%;
+  }
   header #main .close a {
     font-size: 1rem;
   }
   header #main .menu {
-    display: none;
-    gap: 20px;
+    padding: 1rem;
   }
   header #main .close {
-    display: none;
+    margin-top: 15px;
   }
   header #main .menu li {
     text-align: center;
@@ -79,9 +84,9 @@ body {
     color: #6099ee;
   }
 
-  /*sub_menu*/
   header #sub {
     display: none;
+    width: 100%;
   }
 }
 
