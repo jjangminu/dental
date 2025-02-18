@@ -14,93 +14,56 @@
       href="https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <header>
-      <!--main menu-->
-      <div id="main">
-        <h1 class="logo">
-          <a href="index.html"
-            ><img src="img/LOGO.png" alt="다흰치과 로고"
-          /></a>
-        </h1>
-        <ul class="menu">
-          <li class="hos"><a href="#">병원소개</a></li>
-          <li class="doc"><a href="#">의료진소개</a></li>
-          <li class="con"><a href="#">진료안내</a></li>
-          <li class="rev"><a href="#">의료후기</a></li>
-          <li class="comu"><a href="#">커뮤니티</a></li>
-        </ul>
+    <!--bottom fixed-->
+    <div id="fixed">
+      <h1 class="logo">
+        <a href="index.html"><img src="img/LOGO.png" alt="다흰치과 로고" /></a>
+      </h1>
+      <div class="text_box">
+        <input
+          type="text"
+          onfocus="if(this.value =='이름') this.value='';"
+          onblur="if(this.value =='') this.value='이름';"
+          value="이름"
+        />
+        <input
+          type="text"
+          onfocus="if(this.value =='전화번호') this.value='';"
+          onblur="if(this.value =='') this.value='전화번호';"
+          value="전화번호"
+        /><br />
+        <input
+          class="counsel"
+          type="text"
+          onfocus="if(this.value =='상담내용을 입력해주세요') this.value='';"
+          onblur="if(this.value =='') this.value='상담내용을 입력해주세요';"
+          value="상담내용을 입력해주세요"
+        />
       </div>
-
-      <!--sub menu-->
-      <div id="sub">
-        <ul class="doc">
-          <li><a href="#">병원장 소개</a></li>
-          <li><a href="#">의료진 소개</a></li>
-        </ul>
-        <ul class="con">
-          <li><a href="#">임플란트</a></li>
-          <li><a href="#">치아교정</a></li>
-          <li><a href="#">라미네이트/미백</a></li>
-          <li><a href="#">사랑니/충치</a></li>
-        </ul>
-        <ul class="rev">
-          <li><a href="#">임플란트</a></li>
-          <li><a href="#">치아교정</a></li>
-          <li><a href="#">라미네이트/미백</a></li>
-          <li><a href="#">사랑니/충치</a></li>
-        </ul>
-        <ul class="comu">
-          <li><a href="#">공지사항</a></li>
-          <li><a href="#">언론보도</a></li>
-          <li><a href="#">상담/예약</a></li>
-          <li><a href="#">이벤트</a></li>
-        </ul>
+      <div class="check_box">
+        <input type="checkbox" name="information" value="information" />
+        <p>개인 정보 처리 방침 <br />약관 보기</p>
+        <div class="button"><a href="#">문의하기</a></div>
       </div>
-    </header>
+    </div>
 
-    <!-- header script-->
-    <script>
-      //header 배경 흰색
-      $("header").on("mouseover", function () {
-        $("header #main").css({
-          "background-color": "rgba(255, 255, 255, 0.8)",
-          transition: "0.5s",
-        });
-      });
-      $("header").on("mouseleave", function () {
-        $("header #main").css({
-          "background-color": "rgba(255, 255, 255, 0.5)",
-          transition: "0.5s",
-        });
-        $("header #sub ul").css({ display: "none" });
-      });
-
-      //서브메뉴 보이기
-      $("header #main .hos").on("mouseover", function () {
-        $("header #sub ul").css({ display: "none" });
-      });
-      $("header #main .doc").on("mouseover", function () {
-        $("header #sub ul").css({ display: "none" });
-        $("header #sub .doc").fadeIn(500);
-        $("header #sub .doc").css({ display: "flex" });
-      });
-      $("header #main .con").on("mouseover", function () {
-        $("header #sub ul").css({ display: "none" });
-        $("header #sub .con").fadeIn(500);
-        $("header #sub .con").css({ display: "flex" });
-      });
-      $("header #main .rev").on("mouseover", function () {
-        $("header #sub ul").css({ display: "none" });
-        $("header #sub .rev").fadeIn(500);
-        $("header #sub .rev").css({ display: "flex" });
-      });
-      $("header #main .comu").on("mouseover", function () {
-        $("header #sub ul").css({ display: "none" });
-        $("header #sub .comu").fadeIn(500);
-        $("header #sub .comu").css({ display: "flex" });
-      });
-    </script>
+    <!--up fixed-->
+    <div id="fix">
+      <div class="up">
+        <a href="index.html"><i class="fa-solid fa-chevron-up"></i></a>
+      </div>
+      <div class="coun">
+        <a href="#">1:1</a>
+      </div>
+    </div>
   </body>
 </html>
