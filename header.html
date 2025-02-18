@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/headerstyle.css" />
+    <script src="/js/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <!--main menu-->
+      <div id="main">
+        <h1 class="logo">
+          <a href="index.html"
+            ><img src="img/LOGO.png" alt="다흰치과 로고"
+          /></a>
+        </h1>
+        <ul class="menu">
+          <li class="hos"><a href="#">병원소개</a></li>
+          <li class="doc"><a href="#">의료진소개</a></li>
+          <li class="con"><a href="#">진료안내</a></li>
+          <li class="rev"><a href="#">의료후기</a></li>
+          <li class="comu"><a href="#">커뮤니티</a></li>
+        </ul>
+      </div>
+
+      <!--sub menu-->
+      <div id="sub">
+        <ul class="doc">
+          <li><a href="#">병원장 소개</a></li>
+          <li><a href="#">의료진 소개</a></li>
+        </ul>
+        <ul class="con">
+          <li><a href="#">임플란트</a></li>
+          <li><a href="#">치아교정</a></li>
+          <li><a href="#">라미네이트/미백</a></li>
+          <li><a href="#">사랑니/충치</a></li>
+        </ul>
+        <ul class="rev">
+          <li><a href="#">임플란트</a></li>
+          <li><a href="#">치아교정</a></li>
+          <li><a href="#">라미네이트/미백</a></li>
+          <li><a href="#">사랑니/충치</a></li>
+        </ul>
+        <ul class="comu">
+          <li><a href="#">공지사항</a></li>
+          <li><a href="#">언론보도</a></li>
+          <li><a href="#">상담/예약</a></li>
+          <li><a href="#">이벤트</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- header script-->
+    <script>
+      //header 배경 흰색
+      $("header").on("mouseover", function () {
+        $("header #main").css({
+          "background-color": "rgba(255, 255, 255, 0.8)",
+          transition: "0.5s",
+        });
+      });
+      $("header").on("mouseleave", function () {
+        $("header #main").css({
+          "background-color": "rgba(255, 255, 255, 0.5)",
+          transition: "0.5s",
+        });
+        $("header #sub ul").css({ display: "none" });
+      });
+
+      //서브메뉴 보이기
+      $("header #main .hos").on("mouseover", function () {
+        $("header #sub ul").css({ display: "none" });
+      });
+      $("header #main .doc").on("mouseover", function () {
+        $("header #sub ul").css({ display: "none" });
+        $("header #sub .doc").fadeIn(500);
+        $("header #sub .doc").css({ display: "flex" });
+      });
+      $("header #main .con").on("mouseover", function () {
+        $("header #sub ul").css({ display: "none" });
+        $("header #sub .con").fadeIn(500);
+        $("header #sub .con").css({ display: "flex" });
+      });
+      $("header #main .rev").on("mouseover", function () {
+        $("header #sub ul").css({ display: "none" });
+        $("header #sub .rev").fadeIn(500);
+        $("header #sub .rev").css({ display: "flex" });
+      });
+      $("header #main .comu").on("mouseover", function () {
+        $("header #sub ul").css({ display: "none" });
+        $("header #sub .comu").fadeIn(500);
+        $("header #sub .comu").css({ display: "flex" });
+      });
+    </script>
+  </body>
+</html>
