@@ -14,6 +14,13 @@
       href="https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
@@ -31,6 +38,12 @@
           <li class="rev"><a href="#">의료후기</a></li>
           <li class="comu"><a href="#">커뮤니티</a></li>
         </ul>
+        <div class="ham">
+          <a href="#"><i class="fa-solid fa-bars"></i></a>
+        </div>
+        <div class="close">
+          <a href="#"><i class="fa-solid fa-xmark"></i></a>
+        </div>
       </div>
 
       <!--sub menu-->
@@ -100,6 +113,21 @@
         $("header #sub ul").css({ display: "none" });
         $("header #sub .comu").fadeIn(500);
         $("header #sub .comu").css({ display: "flex" });
+      });
+
+      /*mobile menu*/
+      $("header #main .ham").on("click", function () {
+        $("header #main .menu").css({ display: "flex" });
+        $("header #main .menu").css({ display: "flex" });
+        $("header #main .close").css({ display: "flex" });
+        $("header #main .ham").css({ display: "none" });
+        $("header #main .logo").css({ display: "none" });
+      });
+      $("header #main .close").on("click", function () {
+        $("header #main .menu").css({ display: "none" });
+        $("header #main .close").css({ display: "none" });
+        $("header #main .ham").css({ display: "flex" });
+        $("header #main .logo").css({ display: "flex" });
       });
     </script>
   </body>

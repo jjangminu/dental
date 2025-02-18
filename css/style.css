@@ -29,79 +29,144 @@ body {
   background-color: #6099ee;
 }
 
-/*header*/
-header {
-  position: fixed;
-  z-index: 10;
-  width: 100%;
-  font-size: 16px;
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+/*mobile*/
+@media (max-width: 600px) {
+  /*header*/
+  header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    font-size: 12px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  }
+
+  /*main_menu*/
+  header #main {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 50px;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  header #main .logo {
+    width: 78px;
+    height: 41px;
+    padding-bottom: 5px;
+  }
+  header #main .ham a {
+    font-size: 1rem;
+  }
+  header #main .close a {
+    font-size: 1rem;
+  }
+  header #main .menu {
+    display: none;
+    gap: 20px;
+  }
+  header #main .close {
+    display: none;
+  }
+  header #main .menu li {
+    text-align: center;
+  }
+  header #main .menu a {
+    display: block;
+    padding: 15px 5px;
+    font-size: 0.8rem;
+  }
+  header #main .menu a:hover {
+    color: #6099ee;
+  }
+
+  /*sub_menu*/
+  header #sub {
+    display: none;
+  }
 }
 
-/*main_menu*/
-header #main {
-  display: flex;
-  justify-content: space-between;
-  padding: 5px 100px;
-  box-sizing: border-box;
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.5);
-}
-header #main .logo {
-  width: 100px;
-  height: 55px;
-  padding-bottom: 5px;
-}
-header #main .menu {
-  display: flex;
-  gap: 80px;
-  font-size: 1.1rem;
-}
-header #main .menu li {
-  text-align: center;
-}
-header #main .menu a {
-  display: block;
-  padding: 15px 5px;
-}
-header #main .menu a:hover {
-  color: #6099ee;
-}
+/*pc*/
+@media (min-width: 1200px) {
+  /*header*/
+  header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  }
 
-/*sub_menu*/
-header #sub {
-  display: flex;
-  width: 100%;
-}
-header #sub ul {
-  width: 100%;
-  gap: 50px;
-  justify-content: right;
-  background-color: rgba(255, 255, 255, 0.8);
-}
-header #sub .doc {
-  padding-right: 420px;
-  display: none;
-}
-header #sub .con {
-  padding-right: 230px;
-  display: none;
-}
-header #sub .rev {
-  padding-right: 75px;
-  display: none;
-}
-header #sub .comu {
-  padding-right: 105px;
-  display: none;
-}
-header #sub li {
-  text-align: center;
-}
-header #sub a {
-  display: block;
-  padding: 10px;
-}
-header #sub a:hover {
-  color: #6099ee;
+  /*main_menu*/
+  header #main {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 100px;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  header #main .logo {
+    width: 100px;
+    height: 55px;
+    padding-bottom: 5px;
+  }
+  header #main .menu {
+    display: flex;
+    gap: 80px;
+    font-size: 1.1rem;
+  }
+  header #main .menu li {
+    text-align: center;
+  }
+  header #main .menu a {
+    display: block;
+    padding: 15px 5px;
+  }
+  header #main .menu a:hover {
+    color: #6099ee;
+  }
+  header #main .ham {
+    display: none;
+  }
+  header #main .close {
+    display: none;
+  }
+
+  /*sub_menu*/
+  header #sub {
+    display: flex;
+    width: 100%;
+  }
+  header #sub ul {
+    width: 100%;
+    gap: 50px;
+    justify-content: right;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  header #sub .doc {
+    padding-right: 420px;
+    display: none;
+  }
+  header #sub .con {
+    padding-right: 230px;
+    display: none;
+  }
+  header #sub .rev {
+    padding-right: 75px;
+    display: none;
+  }
+  header #sub .comu {
+    padding-right: 105px;
+    display: none;
+  }
+  header #sub li {
+    text-align: center;
+  }
+  header #sub a {
+    display: block;
+    padding: 10px;
+  }
+  header #sub a:hover {
+    color: #6099ee;
+  }
 }
