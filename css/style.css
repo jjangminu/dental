@@ -70,6 +70,15 @@ body {
     margin-bottom: 10px;
   }
 
+  footer #top_de .kakao i {
+    background-color: #353535;
+    margin: 0px;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 0.6rem;
+  }
+
   footer #top_de .detail .time {
     display: flex;
     align-items: start;
@@ -174,6 +183,15 @@ body {
     margin-bottom: 10px;
   }
 
+  footer #top_de .kakao i {
+    background-color: #353535;
+    margin: 0px;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 0.6rem;
+  }
+
   footer #top_de .detail .time {
     display: flex;
     align-items: start;
@@ -265,6 +283,15 @@ body {
     align-items: center;
     padding: 5px 15px;
     margin-bottom: 10px;
+  }
+
+  footer #top_de .kakao i {
+    background-color: #353535;
+    margin: 0px;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 0.6rem;
   }
 
   footer #top_de .detail .time {
