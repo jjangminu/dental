@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/logo_dro.png" />
+    <link rel="apple-touch-icon" href="img/logo_dro.png" />
+    <title>다흰치과</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!--main menu-->
+      <div id="main">
+        <h1 class="logo">
+          <a href="index.html"
+            ><img src="img/LOGO.png" alt="다흰치과 로고"
+          /></a>
+        </h1>
+        <ul class="menu">
+          <li class="hos"><a href="#">병원소개</a></li>
+          <li class="doc"><a href="#">의료진소개</a></li>
+          <li class="con"><a href="#">진료안내</a></li>
+          <li class="rev"><a href="#">의료후기</a></li>
+          <li class="comu"><a href="#">커뮤니티</a></li>
+        </ul>
+      </div>
+
+      <!--sub menu-->
+      <div id="sub">
+        <ul class="doc">
+          <li><a href="#">병원장 소개</a></li>
+          <li><a href="#">의료진 소개</a></li>
+        </ul>
+        <ul class="con">
+          <li><a href="#">임플란트</a></li>
+          <li><a href="#">치아교정</a></li>
+          <li><a href="#">라미네이트/미백</a></li>
+          <li><a href="#">사랑니/충치</a></li>
+        </ul>
+        <ul class="rev">
+          <li><a href="#">임플란트</a></li>
+          <li><a href="#">치아교정</a></li>
+          <li><a href="#">라미네이트/미백</a></li>
+          <li><a href="#">사랑니/충치</a></li>
+        </ul>
+        <ul class="comu">
+          <li><a href="#">공지사항</a></li>
+          <li><a href="#">언론보도</a></li>
+          <li><a href="#">상담/예약</a></li>
+          <li><a href="#">이벤트</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- header script-->
+    <script>
+      //header 배경 흰색
+      $("header").on("mouseover", function () {
+        $("header #main").css({
+          "background-color": "rgba(255, 255, 255, 0.8)",
+          transition: "0.5s",
+        });
+      });
+      $("header").on("mouseleave", function () {
+        $("header #main").css({
+          "background-color": "rgba(255, 255, 255, 0.5)",
+          transition: "0.5s",
+        });
+        $("header #sub ul").css({ display: "none" });
+      });
+
+      //서브메뉴 보이기
+      $("header #main .hos").on("mouseover", function () {
+        $("header #sub ul").css({ display: "none" });
+      });
+      $("header #main .doc").on("mouseover", function () {
+        $("header #sub ul").css({ display: "none" });
+        $("header #sub .doc").fadeIn(500);
+        $("header #sub .doc").css({ display: "flex" });
+      });
+      $("header #main .con").on("mouseover", function () {
+        $("header #sub ul").css({ display: "none" });
+        $("header #sub .con").fadeIn(500);
+        $("header #sub .con").css({ display: "flex" });
+      });
+      $("header #main .rev").on("mouseover", function () {
+        $("header #sub ul").css({ display: "none" });
+        $("header #sub .rev").fadeIn(500);
+        $("header #sub .rev").css({ display: "flex" });
+      });
+      $("header #main .comu").on("mouseover", function () {
+        $("header #sub ul").css({ display: "none" });
+        $("header #sub .comu").fadeIn(500);
+        $("header #sub .comu").css({ display: "flex" });
+      });
+    </script>
+
+    <!--up fixed-->
+    <div id="up_fixed">
+      <a href="index.html"><i class="fa-solid fa-chevron-up"></i></a>
+    </div>
+
+    <!--bottom fixed-->
+    <div id="fixed">
+      <h1 class="logo">
+        <a href="index.html"><img src="img/LOGO.png" alt="다흰치과 로고" /></a>
+      </h1>
+      <div class="text_box">
+        <input
+          type="text"
+          onfocus="if(this.value =='이름') this.value='';"
+          onblur="if(this.value =='') this.value='이름';"
+          value="이름"
+        />
+        <input
+          type="text"
+          onfocus="if(this.value =='전화번호') this.value='';"
+          onblur="if(this.value =='') this.value='전화번호';"
+          value="전화번호"
+        /><br />
+        <input
+          class="counsel"
+          type="text"
+          onfocus="if(this.value =='상담내용을 입력해주세요') this.value='';"
+          onblur="if(this.value =='') this.value='상담내용을 입력해주세요';"
+          value="상담내용을 입력해주세요"
+        />
+      </div>
+      <div class="check_box">
+        <input type="checkbox" name="information" value="information" />
+        <p>개인 정보 처리 방침 <br />약관 보기</p>
+        <div class="button"><a href="#">문의하기</a></div>
+      </div>
+    </div>
+
+    <!--visual-->
+    <div id="visual">
+      <h2>진료과목</h2>
+    </div>
+
+    <!--container-->
+    <div id="container">
+      <!--con1-->
+      <div id="con1">
+        <h2>올바른 때에</h2>
+        <h2><span>최고의 진료</span>를 제공하겠습니다.</h2>
+      </div>
+
+      <!--con2-->
+      <div id="con2">
+        <!--#con2 part01-->
+        <div id="part01">
+          <div class="back">
+            <div class="hos">
+              <p>환자분의 <span>함박웃음</span>을 위하여</p>
+              <p>오차율을 줄이고 <span>성공률</span>을 높였습니다!</p>
+            </div>
+          </div>
+          <img src="img/person.jpg" />
+          <h2>무통<br />임플란트</h2>
+          <div class="icon">
+            <p class="one">
+              <i class="fa-solid fa-circle" style="color: #ff8800"></i>
+            </p>
+            <p class="two">
+              <i class="fa-solid fa-circle" style="color: #6099ee"></i>
+            </p>
+            <p class="three">
+              <i class="fa-solid fa-circle" style="color: #6099ee"></i>
+            </p>
+          </div>
+        </div>
+
+        <!--#con2 part02-->
+        <div id="part02">
+          <div class="back">
+            <div class="hos">
+              <p>환자분의 <span>함박웃음</span>을 위하여</p>
+              <p>오차율을 줄이고 <span>성공률</span>을 높였습니다!</p>
+            </div>
+          </div>
+          <img src="img/person.jpg" />
+          <h2>라미네이트<br />/미백</h2>
+          <div class="icon">
+            <p class="one">
+              <i class="fa-solid fa-circle" style="color: #6099ee"></i>
+            </p>
+            <p class="two">
+              <i class="fa-solid fa-circle" style="color: #ff8800"></i>
+            </p>
+            <p class="three">
+              <i class="fa-solid fa-circle" style="color: #6099ee"></i>
+            </p>
+          </div>
+        </div>
+
+        <!--#con2 part03-->
+        <div id="part03">
+          <div class="back">
+            <div class="hos">
+              <p>환자분의 <span>함박웃음</span>을 위하여</p>
+              <p>오차율을 줄이고 <span>성공률</span>을 높였습니다!</p>
+            </div>
+          </div>
+          <img src="img/person.jpg" />
+          <h2>사랑니<br />/충치</h2>
+          <div class="icon">
+            <p class="one">
+              <i class="fa-solid fa-circle" style="color: #6099ee"></i>
+            </p>
+            <p class="two">
+              <i class="fa-solid fa-circle" style="color: #6099ee"></i>
+            </p>
+            <p class="three">
+              <i class="fa-solid fa-circle" style="color: #ff8800"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--#con2 스크립트-->
+      <script>
+        $("#con2 #part01 .two").on("click", function () {
+          $("#con2 #part01").hide(500);
+          $("#con2 #part02").show(500);
+        });
+        $("#con2 #part02 .three").on("click", function () {
+          $("#con2 #part02").hide(500);
+          $("#con2 #part03").show(500);
+        });
+        $("#con2 #part03 .one").on("click", function () {
+          $("#con2 #part03").hide(500);
+          $("#con2 #part01").show(500);
+        });
+      </script>
+
+      <!--con3-->
+      <div id="con3">
+        <h4>DAHYUN FACT <span>01</span></h4>
+        <h3><span>다흰</span>의 <span>무통 임플란트</span>가 좋은 이유</h3>
+        <div class="every">
+          <div class="pattern1">
+            <h2>01</h2>
+            <h5>무통마취</h5>
+            <i class="fa-solid fa-tooth" style="color: #ff8800"></i>
+            <p>아프지 않은 무통마취로 편안하게 치료받으세요</p>
+          </div>
+          <div class="pattern2">
+            <h2>02</h2>
+            <h5>무통마취</h5>
+            <i class="fa-solid fa-tooth" style="color: #ff8800"></i>
+            <p>아프지 않은 무통마취로 편안하게 치료받으세요</p>
+          </div>
+          <div class="pattern1">
+            <h2>03</h2>
+            <h5>무통마취</h5>
+            <i class="fa-solid fa-tooth" style="color: #ff8800"></i>
+            <p>아프지 않은 무통마취로 편안하게 치료받으세요</p>
+          </div>
+          <div class="pattern2">
+            <h2>04</h2>
+            <h5>무통마취</h5>
+            <i class="fa-solid fa-tooth" style="color: #ff8800"></i>
+            <p>아프지 않은 무통마취로 편안하게 치료받으세요</p>
+          </div>
+        </div>
+      </div>
+
+      <!--con4-->
+      <div id="con4">
+        <h2>DAHYUN FACT <span>02</span></h2>
+        <div class="smile">
+          <div class="to">
+            <h3>다흰의 스마일 교정은</h3>
+            <h3>인비절라인 교정과 함께합니다.</h3>
+          </div>
+          <div class="correct">
+            <div class="circle">
+              <p>교정 후 모습 예측 가능</p>
+            </div>
+            <div class="circle">
+              <p>교정 후 모습 예측 가능</p>
+            </div>
+            <div class="circle">
+              <p>교정 후 모습 예측 가능</p>
+            </div>
+          </div>
+        </div>
+        <img src="img/invisalign 1.png" />
+      </div>
+
+      <!--con5-->
+      <div id="con5">
+        <h4>DAHYUN FACT <span>03</span></h4>
+        <div class="back">
+          <h3>라미네이트 디지털과 다흰이 만나다!</h3>
+          <h2>라미네이트</h2>
+          <p>오차없는 아름다움! 하루에 완성되는 최소삭제 치아성형</p>
+        </div>
+        <img src="img/tooth.png" />
+      </div>
+
+      <!--con6-->
+      <div id="con6">
+        <img src="img/muchine.png" />
+        <h4>DAHYUN FACT <span class="four">04</span></h4>
+        <div class="good">
+          <p>다흰은 올바른 때에</p>
+          <p>최고의 치료를 받을 수 있도록</p>
+        </div>
+        <h3><span class="spa">구강스파 클리닉</span>을 개설하였습니다</h3>
+      </div>
+    </div>
+
+    <!--footer-->
+    <footer>
+      <ul id="top_de">
+        <li>
+          <ul class="detail">
+            <li class="call">
+              <i class="fa-solid fa-phone"></i>
+              <p class="tit">전화상담</p>
+              <h3>
+                02-8625-2543<br />
+                010-2878-0681
+              </h3>
+            </li>
+            <li class="kakao">
+              <i class="fa-solid fa-phone"></i>
+              <p class="tit">카톡상담</p>
+              <div>
+                <div class="search">
+                  <p>다흰치과</p>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <p>
+                  카카오 아이디 검색에서<br />
+                  다흰 치과를 검색하세요.
+                </p>
+              </div>
+            </li>
+            <li class="time">
+              <i class="fa-solid fa-phone"></i>
+              <p class="tit">진료시간</p>
+              <ul>
+                <li>
+                  <p>진료시간</p>
+                  <p>10:00 ~ 18:00</p>
+                </li>
+                <li>
+                  <p>점심시간(평일)</p>
+                  <p>12:45 ~ 14:00</p>
+                </li>
+                <li>
+                  <p>토요일</p>
+                  <p>10:00 ~ 14:00</p>
+                </li>
+                <li>
+                  <p>*일요일/공휴일은 휴진</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="map">
+            <!-- 1. 지도 노드 -->
+            <div
+              id="daumRoughmapContainer1739777181236"
+              class="root_daum_roughmap root_daum_roughmap_landing"
+            ></div>
+            <!-- 2. 설치 스크립트 -->
+            <script
+              charset="UTF-8"
+              class="daum_roughmap_loader_script"
+              src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
+            ></script>
+            <!-- 3. 실행 스크립트 -->
+            <script charset="UTF-8">
+              new daum.roughmap.Lander({
+                timestamp: "1739777181236",
+                key: "2n3cx",
+                mapWidth: "450",
+                mapHeight: "250",
+              }).render();
+            </script>
+            <p>서울 강서구 화곡동 1066-20</p>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="social">
+        <li>
+          <a href="#"><i class="fa-brands fa-instagram"></i> 인스타</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-message"></i> 카카오톡</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-blog"></i> 블로그</a>
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fa-solid fa-tower-observation"></i> 네이버예약</a
+          >
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
