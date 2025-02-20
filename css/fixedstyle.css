@@ -1,0 +1,418 @@
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #5b5b5b;
+}
+
+html,
+body {
+  color: #5b5b5b;
+  font-family: "42dot Sans", serif;
+  font-size: 17px;
+}
+.logo img {
+  width: 100%;
+}
+/*스크롤바*/
+/*bottom_fixed*/
+#fixed {
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  padding: 15px 0px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  gap: 250px;
+}
+#fixed .logo {
+  width: 90px;
+  height: 50px;
+  padding-bottom: 5px;
+}
+#fixed .text_box {
+  color: #5b5b5b;
+  width: 300px;
+}
+#fixed .text_box input {
+  padding: 5px 2px;
+  border: 1px solid #5b5b5b;
+  border-radius: 5px;
+  width: 47%;
+  font-size: 0.7rem;
+}
+#fixed .text_box input:focus {
+  outline: none;
+}
+#fixed .text_box .counsel {
+  width: 98%;
+  margin-top: 7px;
+}
+#fixed .check_box {
+  display: flex;
+  font-size: 0.9rem;
+  align-items: center;
+  font-size: 0.7rem;
+}
+#fixed .check_box input {
+  appearance: none;
+  box-sizing: border-box;
+  background-clip: content-box;
+  padding: 3px;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #5b5b5b;
+  cursor: pointer;
+}
+#fixed .check_box input:checked {
+  border-color: #6099ee;
+  background-color: #6099ee;
+}
+#fixed .check_box p {
+  margin: 0px 15px 0px 10px;
+}
+#fixed .check_box .button {
+  width: 130px;
+  text-align: center;
+  background-color: #6099ee;
+  border-radius: 12px;
+}
+#fixed .check_box .button a {
+  display: block;
+  color: white;
+  padding: 12px 0px;
+  font-weight: bolder;
+  font-size: 0.8rem;
+}
+#fixed .check_box .button a:hover {
+  background-color: white;
+  border: 1px solid #6099ee;
+  color: #6099ee;
+  border-radius: 12px;
+}
+
+/*up_fixed*/
+#up_fixed {
+  position: fixed;
+  bottom: 60px;
+  right: 35px;
+  z-index: 10;
+  font-size: 25px;
+  background-color: #6099ee;
+  width: 55px;
+  padding: 10px 0px;
+  border-radius: 50%;
+  text-align: center;
+}
+#up_fixed a {
+  color: white;
+}
+::-webkit-scrollbar {
+  width: 8px; /* 세로축 스크롤바 폭 너비 */
+}
+::-webkit-scrollbar-thumb {
+  background-color: #6099ee;
+}
+
+/*mobile*/
+@media (max-width: 600px) {
+  /*bottom_fixed*/
+  #fixed {
+    display: none;
+  }
+
+  #mo_fix {
+    background-color: #6099ee;
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+    gap: 2px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+  }
+  #mo_fix input {
+    width: 70px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 0.7rem;
+  }
+  #mo_fix .button {
+    font-size: 0.7rem;
+    border: 1px solid white;
+    margin-top: 8px;
+    width: 100px;
+    text-align: center;
+    color: white;
+    border-radius: 25px;
+  }
+  #mo_fix .button a {
+    color: white;
+    display: block;
+    border-radius: 25px;
+    padding: 5px;
+  }
+  #mo_fix .button a:hover {
+    background-color: #ff8800;
+  }
+
+  /*fix*/
+  #fix {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+  }
+
+  /*up*/
+  #fix .up {
+    z-index: 9;
+    background-color: #6099ee;
+    width: 40px;
+    padding: 10px 0px;
+    border-radius: 50%;
+    text-align: center;
+  }
+  #fix .up a {
+    color: white;
+  }
+  /*counsel*/
+  #fix .coun {
+    z-index: 9;
+    background-color: #6099ee;
+    width: 40px;
+    padding: 10px 0px;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  .coun a {
+    color: white;
+  }
+}
+
+/*tablet*/
+@media (min-width: 600px) and (max-width: 1200px) {
+  /*bottom_fixed*/
+  #mo_fix {
+    display: none;
+  }
+  #fixed {
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    padding: 15px 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 8;
+    gap: 50px;
+  }
+  #fixed .logo {
+    width: 70px;
+    height: 40px;
+    padding-bottom: 5px;
+  }
+  #fixed .text_box {
+    color: #5b5b5b;
+    width: 200px;
+    text-align: center;
+  }
+  #fixed .text_box input {
+    padding: 5px 2px;
+    border: 1px solid #5b5b5b;
+    width: 90px;
+    font-size: 0.6rem;
+  }
+  #fixed .text_box input:focus {
+    outline: none;
+  }
+  #fixed .text_box .counsel {
+    width: 192px;
+    margin-top: 7px;
+  }
+  #fixed .check_box {
+    display: flex;
+    align-items: center;
+    font-size: 0.7rem;
+  }
+  #fixed .check_box input {
+    appearance: none;
+    box-sizing: border-box;
+    background-clip: content-box;
+    padding: 3px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #5b5b5b;
+    cursor: pointer;
+  }
+  #fixed .check_box input:checked {
+    border-color: #6099ee;
+    background-color: #6099ee;
+  }
+  #fixed .check_box p {
+    margin: 0px 15px 0px 5px;
+  }
+  #fixed .check_box .button {
+    width: 80px;
+    text-align: center;
+    background-color: #6099ee;
+    border-radius: 15px;
+  }
+  #fixed .check_box .button a {
+    display: block;
+    color: white;
+    padding: 12px 0px;
+    font-weight: bolder;
+    font-size: 0.7rem;
+  }
+  #fixed .check_box .button a:hover {
+    background-color: white;
+    border: 1px solid #6099ee;
+    color: #6099ee;
+    border-radius: 12px;
+  }
+
+  /*up_fixed*/
+  #fix .up {
+    position: fixed;
+    bottom: 80px;
+    right: 35px;
+    z-index: 9;
+    background-color: #6099ee;
+    width: 40px;
+    padding: 10px 0px;
+    border-radius: 50%;
+    text-align: center;
+  }
+  #fix .up a {
+    color: white;
+  }
+  #fix .coun {
+    display: none;
+  }
+}
+
+/*pc*/
+@media (min-width: 1200px) {
+  /*bottom_fixed*/
+  #mo_fix {
+    display: none;
+  }
+  #fixed {
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    padding: 15px 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 8;
+    gap: 200px;
+  }
+  #fixed .logo {
+    width: 90px;
+    height: 50px;
+    padding-bottom: 5px;
+  }
+  #fixed .text_box {
+    color: #5b5b5b;
+    width: 300px;
+    text-align: center;
+  }
+  #fixed .text_box input {
+    padding: 5px 2px;
+    border: 1px solid #5b5b5b;
+    width: 141px;
+    font-size: 0.7rem;
+  }
+  #fixed .text_box input:focus {
+    outline: none;
+  }
+  #fixed .text_box .counsel {
+    width: 292px;
+    margin-top: 7px;
+  }
+  #fixed .check_box {
+    display: flex;
+    font-size: 0.9rem;
+    align-items: center;
+    font-size: 0.7rem;
+  }
+  #fixed .check_box input {
+    appearance: none;
+    box-sizing: border-box;
+    background-clip: content-box;
+    padding: 3px;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #5b5b5b;
+    cursor: pointer;
+  }
+  #fixed .check_box input:checked {
+    border-color: #6099ee;
+    background-color: #6099ee;
+  }
+  #fixed .check_box p {
+    margin: 0px 15px 0px 10px;
+  }
+  #fixed .check_box .button {
+    width: 130px;
+    text-align: center;
+    background-color: #6099ee;
+    border-radius: 12px;
+  }
+  #fixed .check_box .button a {
+    display: block;
+    color: white;
+    padding: 12px 0px;
+    font-weight: bolder;
+    font-size: 0.8rem;
+  }
+  #fixed .check_box .button a:hover {
+    background-color: white;
+    border: 1px solid #6099ee;
+    color: #6099ee;
+    border-radius: 12px;
+  }
+
+  /*up_fixed*/
+  #fix .up {
+    position: fixed;
+    bottom: 60px;
+    right: 35px;
+    z-index: 9;
+    font-size: 25px;
+    background-color: #6099ee;
+    width: 48px;
+    padding: 10px 0px;
+    border-radius: 50%;
+    text-align: center;
+  }
+  #fix .up a {
+    color: white;
+  }
+  #fix .coun {
+    display: none;
+  }
+}
