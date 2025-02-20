@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>의료 후기</title>
+    <link rel="stylesheet" href="css/review.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/headerstyle.css">
+    <link rel="stylesheet" href="css/footerstyle.css">
+    <link rel="stylesheet" href="css/fixedstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /><script src="js/review.js"></script>
+</head>
+<body>
+    <!--비주얼-->
+
+    <div id="visual">
+        <div>
+            <img src="img/visual (3).jpg" alt="">
+            <h2>의료 후기</h2>
+        </div>
+    </div>
+
+    <!--콘텐츠-->
+
+    <div id="contents">
+        <div id="con01">
+            <h2>실제 치료한<br><span>환자의 후기</span>입니다.</h2>
+            <h3>치과 치료 과정이 어떻게 이루어지는지<br>보다 <span>자세하게</span> 알려드릴게요😘</h3>
+        </div>
+
+        <div id="con02">
+            <ul>
+                <li>전체보기</li>
+                <li>충치</li>
+                <li>임플란트</li>
+                <li>교정</li>
+                <li>일반치료</li>
+            </ul>
+        </div>
+
+        <div id="con03">
+            <ul>
+                <li class="imgs">
+                    <div class="re01">
+                        <img src="img/Vector (1).png" alt="">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <img src="img/image 59.jpg" alt="">
+                    </div>
+                    <h3>상악 풀케이스 임플란트 파노라마 사진</h3>
+                    <div class="im">
+                        <h4 class="orange">임플란트</h4>
+                        <h4>2025-02-19</h4>
+                        <div class="heart">
+                            <i class="fa-regular fa-heart"></i>
+                            <h4>116</h4>
+                        </div>
+                    </div>
+                </li>
+                <li class="imgg">
+                    <div class="re02">
+                        <img src="img/image.png" alt="">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <img src="img/image (1).png" alt="">
+                    </div>
+                    <h3>상악 풀케이스 임플란트 전& (구강 내 사진)</h3>
+                    <div class="pp">
+                        <h4 class="blue">임플란트</h4>
+                        <h4>2025-02-19</h4>
+                        <div class="heart">
+                            <i class="fa-regular fa-heart"></i>
+                            <h4>101</h4>
+                        </div>
+                    </div>
+                </li>
+                <li class="imgg">
+                    <div class="re02">
+                        <img src="img/image.png" alt="">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <img src="img/image (1).png" alt="">
+                    </div>
+                    <h3>상악 풀케이스 임플란트 전& (구강 내 사진)</h3>
+                    <div class="pp">
+                        <h4 class="blue">임플란트</h4>
+                        <h4>2025-02-19</h4>
+                        <div class="heart">
+                            <i class="fa-regular fa-heart"></i>
+                            <h4>101</h4>
+                        </div>
+                    </div>
+                </li>
+                <li class="imgg">
+                    <div class="re02">
+                        <img src="img/image.png" alt="">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <img src="img/image (1).png" alt="">
+                    </div>
+                    <h3>상악 풀케이스 임플란트 전& (구강 내 사진)</h3>
+                    <div class="pp">
+                        <h4 class="blue">임플란트</h4>
+                        <h4>2025-02-19</h4>
+                        <div class="heart">
+                            <i class="fa-regular fa-heart"></i>
+                            <h4>101</h4>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="plus"><a href="#">펼쳐보기 <i class="fa-solid fa-caret-down"></i></a></div>
+        </div>
+        
+        <div id="con04">
+            <h2>환자의 <span>소중한 자필 치료 후기 </span>입니다.</h2>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/mo1.jpeg" alt=""></div>
+              <div class="swiper-slide"><img src="img/mo2.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/mo3.jpg" alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+         
+         <script>
+            var swiper = new Swiper(".mySwiper", {
+              spaceBetween: 30,
+              centeredSlides: true,
+              autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+              },
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
+
+        <div id="con05">
+            <div class="one">
+                <h3>환자에게 <span>진정성</span>이란?</h3>
+                <p>다흰은 환자분들이 <span>진정성</span>을 느낄 수<br>있도록 <span>모든 진료</span>를 의사가 <span>직접 맡아</span><br>위임 진료 없이  진행합니다.</p>
+                <p>
+                    동네에 위치해 있어 <span>접근성</span>이 좋고,<br>편하게 들를 수 있는 <span>사랑방 같은 분위기</span>의<br>병원으로 만들고자 노력하고 있습니다.
+                </p>
+                <i class="fa-solid fa-quote-left"></i>
+                <i class="fa-solid fa-quote-right"></i>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
