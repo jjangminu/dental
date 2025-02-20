@@ -44,7 +44,7 @@ body {
   header #main {
     display: flex;
     justify-content: space-between;
-    padding: 5px 50px;
+    padding: 5px 25px;
     box-sizing: border-box;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.5);
@@ -58,20 +58,22 @@ body {
     font-size: 1rem;
   }
   header #main .mobile_menu {
-    display: none;
     justify-content: space-between;
     height: 300px;
     width: 100%;
+    display: none;
   }
-  header #main .close a {
+
+  header #main .xmark {
+    margin-top: 15px;
+  }
+  header #main .xmark a {
     font-size: 1rem;
   }
   header #main .menu {
     padding: 1rem;
   }
-  header #main .close {
-    margin-top: 15px;
-  }
+
   header #main .menu li {
     text-align: center;
   }
@@ -84,9 +86,40 @@ body {
     color: #6099ee;
   }
 
-  header #sub {
+  /*sub_menu*/
+  header #sub ul {
     display: none;
-    width: 100%;
+  }
+  header #sub .doc {
+    position: absolute;
+    left: 130px;
+    top: 85px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  header #sub .con {
+    position: absolute;
+    left: 130px;
+    top: 130px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  header #sub .rev {
+    position: absolute;
+    left: 130px;
+    top: 175px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  header #sub .comu {
+    position: absolute;
+    left: 130px;
+    top: 222px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  header #sub a:hover {
+    color: #6099ee;
   }
 }
 
@@ -132,7 +165,7 @@ body {
   header #main .ham {
     display: none;
   }
-  header #main .close {
+  header #main .xmark {
     display: none;
   }
 
@@ -219,7 +252,7 @@ body {
   header #main .ham {
     display: none;
   }
-  header #main .close {
+  header #main .xmark {
     display: none;
   }
 
