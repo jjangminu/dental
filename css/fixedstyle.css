@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @charset "UTF-8";
 
 * {
@@ -23,7 +22,6 @@ body {
   width: 100%;
 }
 /*스크롤바*/
-=======
 /*bottom_fixed*/
 #fixed {
   background-color: white;
@@ -120,13 +118,11 @@ body {
 #up_fixed a {
   color: white;
 }
->>>>>>> f73e6368799c3490e5685d1794cf307013e70399
 ::-webkit-scrollbar {
   width: 8px; /* 세로축 스크롤바 폭 너비 */
 }
 ::-webkit-scrollbar-thumb {
   background-color: #6099ee;
-<<<<<<< HEAD
 }
 
 /*mobile*/
@@ -420,6 +416,3 @@ body {
     display: none;
   }
 }
-=======
-}
->>>>>>> f73e6368799c3490e5685d1794cf307013e70399
