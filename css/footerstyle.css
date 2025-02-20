@@ -31,6 +31,7 @@ body {
   background-color: #6099ee;
 }
 
+/*mobile*/
 @media (max-width: 600px) {
   /*footer*/
   footer {
@@ -131,7 +132,9 @@ body {
     display: none;
   }
 }
-@media (min-width: 600px) and (max-width: 600px) {
+
+/*tablet*/
+@media (min-width: 600px) and (max-width: 1200px) {
   /*footer*/
   footer {
     background-color: #353535;
@@ -232,6 +235,8 @@ body {
     padding: 10px 0px;
   }
 }
+
+/*pc*/
 @media (min-width: 1200px) {
   /*footer*/
   footer {
