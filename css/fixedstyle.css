@@ -35,6 +35,48 @@ body {
   #fixed {
     display: none;
   }
+
+  #mo_fix {
+    background-color: #6099ee;
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+    gap: 2px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+  }
+  #mo_fix input {
+    width: 70px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 0.7rem;
+  }
+  #mo_fix .button {
+    font-size: 0.7rem;
+    border: 1px solid white;
+    margin-top: 8px;
+    width: 100px;
+    text-align: center;
+    color: white;
+    border-radius: 25px;
+  }
+  #mo_fix .button a {
+    color: white;
+    display: block;
+    border-radius: 25px;
+    padding: 5px;
+  }
+  #mo_fix .button a:hover {
+    background-color: #ff8800;
+  }
+
   /*fix*/
   #fix {
     position: fixed;
@@ -72,6 +114,9 @@ body {
 /*tablet*/
 @media (min-width: 600px) and (max-width: 1200px) {
   /*bottom_fixed*/
+  #mo_fix {
+    display: none;
+  }
   #fixed {
     background-color: white;
     width: 100%;
@@ -173,6 +218,9 @@ body {
 /*pc*/
 @media (min-width: 1200px) {
   /*bottom_fixed*/
+  #mo_fix {
+    display: none;
+  }
   #fixed {
     background-color: white;
     width: 100%;

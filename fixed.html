@@ -7,13 +7,9 @@
     <link rel="icon" href="img/logo_dro.png" />
     <link rel="apple-touch-icon" href="img/logo_dro.png" />
     <title>다흰치과</title>
-
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="css/fixedstyle.css" />
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script src="js/indexcustom.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -21,6 +17,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <!--bottom fixed-->
@@ -55,6 +60,29 @@
         <div class="button"><a href="#">문의하기</a></div>
       </div>
     </div>
+    <div id="mo_fix">
+      <input
+        type="text"
+        onfocus="if(this.value =='이름') this.value='';"
+        onblur="if(this.value =='') this.value='이름';"
+        value="이름"
+      />
+      <input
+        type="text"
+        onfocus="if(this.value =='전화번호') this.value='';"
+        onblur="if(this.value =='') this.value='전화번호';"
+        value="전화번호"
+      /><br />
+      <input
+        class="counsel"
+        type="text"
+        onfocus="if(this.value =='상담내용') this.value='';"
+        onblur="if(this.value =='') this.value='상담내용';"
+        value="상담내용"
+      />
+      <div class="button"><a href="#">문의하기</a></div>
+      </div>
+    </div>
 
     <!--up fixed-->
     <div id="fix">
@@ -65,5 +93,15 @@
         <a href="#">1:1</a>
       </div>
     </div>
+
+    <!--mobile script-->
+    <script>
+      $("#fix .coun").on("click", function () {
+        $("#mo_fix").fadeToggle(200);
+      });
+      $("#mo_fix").on("mouseleave", function () {
+        $(this).fadeOut(200);
+      });
+    </script>
   </body>
 </html>
