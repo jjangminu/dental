@@ -325,5 +325,81 @@
         </li>
       </ul>
     </footer>
+
+    <!--bottom fixed-->
+    <div id="fixed">
+        <h1 class="logo">
+          <a href="index.html"><img src="img/LOGO.png" alt="다흰치과 로고" /></a>
+        </h1>
+        <div class="text_box">
+          <input
+            type="text"
+            onfocus="if(this.value =='이름') this.value='';"
+            onblur="if(this.value =='') this.value='이름';"
+            value="이름"
+          />
+          <input
+            type="text"
+            onfocus="if(this.value =='전화번호') this.value='';"
+            onblur="if(this.value =='') this.value='전화번호';"
+            value="전화번호"
+          /><br />
+          <input
+            class="counsel"
+            type="text"
+            onfocus="if(this.value =='상담내용을 입력해주세요') this.value='';"
+            onblur="if(this.value =='') this.value='상담내용을 입력해주세요';"
+            value="상담내용을 입력해주세요"
+          />
+        </div>
+        <div class="check_box">
+          <input type="checkbox" name="information" value="information" />
+          <p>개인 정보 처리 방침 <br />약관 보기</p>
+          <div class="button"><a href="#">문의하기</a></div>
+        </div>
+      </div>
+      <div id="mo_fix">
+        <input
+          type="text"
+          onfocus="if(this.value =='이름') this.value='';"
+          onblur="if(this.value =='') this.value='이름';"
+          value="이름"
+        />
+        <input
+          type="text"
+          onfocus="if(this.value =='전화번호') this.value='';"
+          onblur="if(this.value =='') this.value='전화번호';"
+          value="전화번호"
+        /><br />
+        <input
+          class="counsel"
+          type="text"
+          onfocus="if(this.value =='상담내용') this.value='';"
+          onblur="if(this.value =='') this.value='상담내용';"
+          value="상담내용"
+        />
+        <div class="button"><a href="#">문의하기</a></div>
+        </div>
+      </div>
+  
+      <!--up fixed-->
+      <div id="fix">
+        <div class="up">
+          <a href="index.html"><i class="fa-solid fa-chevron-up"></i></a>
+        </div>
+        <div class="coun">
+          <a href="#">1:1</a>
+        </div>
+      </div>
+  
+      <!--mobile script-->
+      <script>
+        $("#fix .coun").on("click", function () {
+          $("#mo_fix").fadeToggle(200);
+        });
+        $("#mo_fix").on("mouseleave", function () {
+          $(this).fadeOut(200);
+        });
+      </script>
 </body>
 </html>
