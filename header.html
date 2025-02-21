@@ -3,9 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!--탭 아이콘-->
+    <link rel="icon" href="img/logo_dro.png" />
+    <link rel="apple-touch-icon" href="img/logo_dro.png" />
+    <title>다흰치과</title>
+
     <link rel="stylesheet" href="css/headerstyle.css" />
-    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/headercustom.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
@@ -16,15 +32,22 @@
             ><img src="img/LOGO.png" alt="다흰치과 로고"
           /></a>
         </h1>
-        <ul class="menu">
-          <li class="hos"><a href="#">병원소개</a></li>
-          <li class="doc"><a href="#">의료진소개</a></li>
-          <li class="con"><a href="#">진료안내</a></li>
-          <li class="rev"><a href="#">의료후기</a></li>
-          <li class="comu"><a href="#">커뮤니티</a></li>
-        </ul>
+        <div class="ham">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="mobile_menu">
+          <ul class="menu">
+            <li class="hos"><a href="#">병원소개</a></li>
+            <li class="doc"><a href="doctor.html">의료진소개</a></li>
+            <li class="con"><a href="#">진료안내</a></li>
+            <li class="rev"><a href="review.html">의료후기</a></li>
+            <li class="comu"><a href="community.html">커뮤니티</a></li>
+          </ul>
+          <div class="xmark">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
       </div>
-
       <!--sub menu-->
       <div id="sub">
         <ul class="doc">
@@ -51,48 +74,5 @@
         </ul>
       </div>
     </header>
-
-    <!-- header script-->
-    <script>
-      //header 배경 흰색
-      $("header").on("mouseover", function () {
-        $("header #main").css({
-          "background-color": "rgba(255, 255, 255, 0.8)",
-          transition: "0.5s",
-        });
-      });
-      $("header").on("mouseleave", function () {
-        $("header #main").css({
-          "background-color": "rgba(255, 255, 255, 0.5)",
-          transition: "0.5s",
-        });
-        $("header #sub ul").css({ display: "none" });
-      });
-
-      //서브메뉴 보이기
-      $("header #main .hos").on("mouseover", function () {
-        $("header #sub ul").css({ display: "none" });
-      });
-      $("header #main .doc").on("mouseover", function () {
-        $("header #sub ul").css({ display: "none" });
-        $("header #sub .doc").fadeIn(500);
-        $("header #sub .doc").css({ display: "flex" });
-      });
-      $("header #main .con").on("mouseover", function () {
-        $("header #sub ul").css({ display: "none" });
-        $("header #sub .con").fadeIn(500);
-        $("header #sub .con").css({ display: "flex" });
-      });
-      $("header #main .rev").on("mouseover", function () {
-        $("header #sub ul").css({ display: "none" });
-        $("header #sub .rev").fadeIn(500);
-        $("header #sub .rev").css({ display: "flex" });
-      });
-      $("header #main .comu").on("mouseover", function () {
-        $("header #sub ul").css({ display: "none" });
-        $("header #sub .comu").fadeIn(500);
-        $("header #sub .comu").css({ display: "flex" });
-      });
-    </script>
   </body>
 </html>
