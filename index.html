@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+  
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,13 +8,9 @@
     <link rel="icon" href="img/logo_dro.png" />
     <link rel="apple-touch-icon" href="img/logo_dro.png" />
     <title>다흰치과</title>
-
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="css/indexstyle.css" />
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script src="js/indexcustom.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -21,7 +18,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-  </head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <body>
     <header>
       <!--main menu-->
@@ -31,104 +33,513 @@
             ><img src="img/LOGO.png" alt="다흰치과 로고"
           /></a>
         </h1>
+        <div class="ham">
+          <i class="fa-solid fa-bars"></i>
+        </div>
         <div class="mobile_menu">
           <ul class="menu">
             <li class="hos"><a href="#">병원소개</a></li>
-            <li class="doc"><a href="#">의료진소개</a></li>
+            <li class="doc"><a href="doctor.html">의료진소개</a></li>
             <li class="con"><a href="#">진료안내</a></li>
-            <li class="rev"><a href="#">의료후기</a></li>
-            <li class="comu"><a href="#">커뮤니티</a></li>
+            <li class="rev"><a href="review.html">의료후기</a></li>
+            <li class="comu"><a href="community.html">커뮤니티</a></li>
           </ul>
-
-          <!--sub menu-->
-          <div id="sub">
-            <ul class="doc">
-              <li><a href="#">병원장 소개</a></li>
-              <li><a href="#">의료진 소개</a></li>
-            </ul>
-            <ul class="con">
-              <li><a href="#">임플란트</a></li>
-              <li><a href="#">치아교정</a></li>
-              <li><a href="#">라미네이트/미백</a></li>
-              <li><a href="#">사랑니/충치</a></li>
-            </ul>
-            <ul class="rev">
-              <li><a href="#">임플란트</a></li>
-              <li><a href="#">치아교정</a></li>
-              <li><a href="#">라미네이트/미백</a></li>
-              <li><a href="#">사랑니/충치</a></li>
-            </ul>
-            <ul class="comu">
-              <li><a href="#">공지사항</a></li>
-              <li><a href="#">언론보도</a></li>
-              <li><a href="#">상담/예약</a></li>
-              <li><a href="#">이벤트</a></li>
-            </ul>
-          </div>
-          <div class="close">
-            <a href="#"><i class="fa-solid fa-xmark"></i></a>
+          <div class="xmark">
+            <i class="fa-solid fa-xmark"></i>
           </div>
         </div>
-
-        <div class="ham">
-          <a href="#"><i class="fa-solid fa-bars"></i> </a>
-        </div>
+      </div>
+      <!--sub menu-->
+      <div id="sub">
+        <ul class="doc">
+          <li><a href="#">병원장 소개</a></li>
+          <li><a href="#">의료진 소개</a></li>
+        </ul>
+        <ul class="con">
+          <li><a href="#">임플란트</a></li>
+          <li><a href="#">치아교정</a></li>
+          <li><a href="#">라미네이트/미백</a></li>
+          <li><a href="#">사랑니/충치</a></li>
+        </ul>
+        <ul class="rev">
+          <li><a href="#">임플란트</a></li>
+          <li><a href="#">치아교정</a></li>
+          <li><a href="#">라미네이트/미백</a></li>
+          <li><a href="#">사랑니/충치</a></li>
+        </ul>
+        <ul class="comu">
+          <li><a href="#">공지사항</a></li>
+          <li><a href="#">언론보도</a></li>
+          <li><a href="#">상담/예약</a></li>
+          <li><a href="#">이벤트</a></li>
+        </ul>
       </div>
     </header>
 
-    <!-- header script-->
+    <!--visual-->
+    <div id="visual">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/visual01.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/visual02.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/visual03.jpg" alt=""></div>
+        </div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+
+    <!--container-->
+    <div id="container">
+      <!--container01-->
+      <div id="con01">
+        <p>
+          <span>어디가 <b>불편하신가요?</b></span
+          ><br />
+          증상을 선택하시면 자세한 정보를 확인할 수 있어요.
+        </p>
+        <ul class="icons">
+          <li class="icon06">
+            <img src="img/con01_6.svg" alt="충치" />
+            <p>이에 검은 얼룩이 있어요</p>
+          </li>
+          <li class="icon05">
+            <img src="img/con01_1.svg" alt="사랑니" />
+            <p>사랑니가 아파요</p>
+          </li>
+          <li class="icon04">
+            <img src="img/con01_2.svg" alt="" />
+            <p>이빨이 노란색이에요</p>
+          </li>
+          <li class="icon03">
+            <img src="img/con01_5.svg" alt="" />
+            <p>이가 깨졌어요</p>
+          </li>
+          <li class="icon02">
+            <img src="img/con01_4.svg" alt="" />
+            <p>이가 안 예뻐요</p>
+          </li>
+          <li class="icon01">
+            <img src="img/con01_3.svg" alt="임플란트" />
+            <p>이가 깨지고 잇몸이 아파요</p>
+          </li>
+        </ul>
+        <ul class="button">
+          <li class="but01"></li>
+          <li class="but02"></li>
+          <li class="but03"></li>
+          <li class="but04"></li>
+          <li class="but05"></li>
+          <li class="but06"></li>
+        </ul>
+      </div>
+
+      <!--container02-->
+      <div id="con02">
+        <p class="enjoy">
+          저희 <b>다흰</b>은 아프지 않고<br />
+          편안한 치료를 목표로 합니다
+        </p>
+        <p class="dental">
+          저희 <b>다흰</b>은 여러 전문분야를<br />
+          포괄하는 통합진료를 목표로 합니다
+        </p>
+        <p class="nature">
+          저희 <b>다흰</b>은 객관적이고<br />
+          과학적 근거에 기초한 치료를 지향합니다
+        </p>
+        <ul class="detail">
+          <li class="im">
+            <b>ENJOY 임플란트</b><br />
+            <span>부작용, 걱정, 불안함 없는 바른치료 문화를 만들고<br />
+            인재를 키우고 기술을 나눕니다</span>
+          </li>
+          <li class="invi">
+            <b>K-DENTAL 인비절라인 </b><br />
+            <span>플레티넘 등급 미국 본사와 함께 고민하고
+            <br />
+            우수한 K-Dental을 알리는 중심이 됩니다</span>
+          </li>
+          <li class="lami">
+            <b>NATURE 라미네이트</b><br />
+            <span>자연치아보다 더 자연스러운<br />
+            새로운 치아 새로운 삶</span>
+          </li>
+        </ul>
+      </div>
+
+      <!--container03-->
+      <div id="con03">
+        <h3>BEFORE <span>&</span> AFTER</h3>
+        <p>다흰치과의 보장된 치료결과</p>
+        <ul class="menu">
+          <li class="im_but">무통임플란트</li>
+          <li class="sm_but">스마일교정</li>
+          <li class="la_but">라미네이트/미백</li>
+          <li class="ba_but">사랑니/충치</li>
+        </ul>
+        <div class="swiper mySwiper im_bar">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide im01">
+              <ul>
+                <li><img src="img/con03_01.png" alt="" /><p class="ba">2015년 5월</p><h4>전체임플란트</h4></li>
+                <li><img src="img/con03_02.png" alt="" /><p class="ba">2017년 2월</p></li>
+              </ul>
+              
+            </div>
+            <div class="swiper-slide im02">
+              <ul>
+                <li><img src="img/con03_03.png" alt="" /><p class="ba">2018년 7월</p>
+                  <h4>깨진이 임플란트</h4></li>
+                <li><img src="img/con03_04.png" alt="" /><p class="ba">2019년 6월</p></li>
+              </ul>
+            </div>
+            <div class="swiper-slide im03">
+              <ul>
+                <li><img src="img/con03_05.png" alt="" /><p class="ba">2021년 12월</p></li>
+                <li><img src="img/con03_06.png" alt="" /><p class="ba">2023년 4월</p></li>
+              </ul>
+              <h4>전체임플란트</h4>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div class="swiper mySwiper smile_bar">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide smile01">
+              <ul>
+                <li><img src="img/con03_07.png" alt="" /><p class="ba">2018년 7월</p><h4>돌출입교정 <span>클리피씨 장치 · 치료기간 1년</span></h4></li>
+                <li><img src="img/con03_08.png" alt="" /><p class="ba">2019년 6월</p></li>
+              </ul>
+            </div>
+            <div class="swiper-slide smile02">
+              <ul>
+                <li><img src="img/con03_09.png" alt="" /><p class="ba">2018년 7월</p><h4>돌출입교정 <span>클리피씨 장치 · 치료기간 2년</span></span></h4></li>
+                <li><img src="img/con03_10.png" alt="" /><p class="ba">2019년 6월</p></li>
+              </ul>
+            </div>
+            <div class="swiper-slide smile03">
+              <ul>
+                <li><img src="img/con03_11.png" alt="" /><p class="ba">2018년 7월</p><h4>무턱교정  <span>세라믹 장치 치료기간 1년</span></h4></li>
+                <li><img src="img/con03_12.png" alt="" /><p class="ba">2019년 6월</p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper mySwiper lami_bar">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide lami01">
+              <ul>
+                <li><img src="img/con03_09.png" alt="" /><p class="ba">2018년 7월</p><h4>돌출입교정 <span>클리피씨 장치 · 치료기간 2년</span></span></h4></li>
+                <li><img src="img/con03_10.png" alt="" /><p class="ba">2019년 6월</p></li>
+              </ul>
+            </div>
+            <div class="swiper-slide lami02">
+              <ul>
+                <li><img src="img/con03_09.png" alt="" /><p class="ba">2018년 7월</p><h4>돌출입교정 <span>클리피씨 장치 · 치료기간 2년</span></span></h4></li>
+                <li><img src="img/con03_10.png" alt="" /><p class="ba">2019년 6월</p></li>
+              </ul>
+            </div>
+            <div class="swiper-slide lami03">
+              <ul>
+                <li><img src="img/con03_09.png" alt="" /><p class="ba">2018년 7월</p><h4>돌출입교정 <span>클리피씨 장치 · 치료기간 2년</span></span></h4></li>
+                <li><img src="img/con03_10.png" alt="" /><p class="ba">2019년 6월</p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper mySwiper basic_bar">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide basic01">
+              <ul>
+                <li><img src="img/con03_09.png" alt="" /><p class="ba">2018년 7월</p><h4>돌출입교정 <span>클리피씨 장치 · 치료기간 2년</span></span></h4></li>
+                <li><img src="img/con03_10.png" alt="" /><p class="ba">2019년 6월</p></li>
+              </ul>
+            </div>
+            <div class="swiper-slide basic02">
+              <ul>
+                <li><img src="img/con03_09.png" alt="" /><p class="ba">2018년 7월</p><h4>돌출입교정 <span>클리피씨 장치 · 치료기간 2년</span></span></h4></li>
+                <li><img src="img/con03_10.png" alt="" /><p class="ba">2019년 6월</p></li>
+              </ul>
+            </div>
+            <div class="swiper-slide basic03">
+              <ul>
+                <li><img src="img/con03_09.png" alt="" /><p class="ba">2018년 7월</p><h4>돌출입교정 <span>클리피씨 장치 · 치료기간 2년</span></span></h4></li>
+                <li><img src="img/con03_10.png" alt="" /><p class="ba">2019년 6월</p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+      <!--container04-->
+      <div id="con04">
+        <h3>협력사 / 가입학회</h3>
+        <div class="banner_wraper">
+          <img src="img/partner/logo_1.gif" />
+          <img src="img/partner/logo_2.jpg" />
+          <img src="img/partner/logo_3.png" />
+          <img src="img/partner/logo_4.gif" />
+          <img src="img/partner/logo_5.jpg" />
+          <img src="img/partner/logo_6.png" />
+          <img src="img/partner/logo_7.jpg" />
+          <img src="img/partner/logo_8.png" />
+          <img src="img/partner/logo_9.jpg" />
+          <img src="img/partner/logo_10.png" />
+          <img src="img/partner/logo_11.jpg" />
+          <img src="img/partner/logo_12.png" />
+          <img src="img/partner/logo_13.jpg" />
+          <img src="img/partner/logo_14.png" />
+          <img src="img/partner/logo_15.png" />
+          <img src="img/partner/logo_16.png" />
+          <img src="img/partner/logo_17.png" />
+          <img src="img/partner/logo_18.png" />
+          <img src="img/partner/logo_19.png" />
+          <img src="img/partner/logo_20.png" />
+          <img src="img/partner/logo_21.png" />
+        </div>
+      </div>
+
+      <!--배너 롤링 스크립트-->
+      <script type="text/javascript">
+        //client rolling banner
+        //문서가 로드된 후 실행
+        window.onload = function () {
+          //var 변수선언
+          var bannerLeft = 0;
+          var first = 1;
+          var last;
+          var imgCnt = 0;
+          var $img = $(".banner_wraper img");
+          var $first;
+          var $last;
+          $img.each(function () {
+            // 15px 간격으로 배너 처음 위치 시킴
+            $(this).css("left", bannerLeft);
+            bannerLeft += $(this).width() + 15;
+            $(this).attr("id", "banner" + ++imgCnt);
+            // img에 id 속성 추가
+          });
+          if (imgCnt > 8) {
+            //배너 15개 이상이면 이동시킴
+            last = imgCnt;
+            setInterval(function () {
+              $img.each(function () {
+                $(this).css("left", $(this).position().left - 1);
+                // 1px씩 왼쪽으로 이동
+              });
+              $first = $("#banner" + first);
+              $last = $("#banner" + last);
+              if ($first.position().left < -25) {
+                //제일 앞에 배너 제일 뒤로 옮김
+                $first.css("left", $last.position().left + $last.width() + 5);
+                first++;
+                last++;
+                if (last > imgCnt) {
+                  last = 1;
+                }
+                if (first > imgCnt) {
+                  first = 1;
+                }
+              }
+            }, 50); //여기 값을 조정하면 속도를 조정할 수 있다.(위에 1px 이동하는 부분도 조정하면 //깔끔하게 변경가능하다
+          }
+        };
+      </script>
+    </div>
+
+    <!--footer-->
+    <footer>
+      <ul id="top_de">
+        <li>
+          <ul class="detail">
+            <li>
+              <div class="call">
+                <i class="fa-solid fa-phone"></i>
+                <p class="tit">전화상담</p>
+                <h3>
+                  02-8625-2543<br />
+                  010-2878-0681
+                </h3>
+              </div>
+            </li>
+            <li>
+              <div class="kakao">
+                <i class="fa-solid fa-phone"></i>
+                <p class="tit">카톡상담</p>
+                <div>
+                  <div class="search">
+                    <p>다흰치과</p>
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                  <p>
+                    카카오 아이디 검색에서<br />
+                    다흰 치과를 검색하세요.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="time">
+                <i class="fa-solid fa-phone"></i>
+                <p class="tit">진료시간</p>
+                <ul>
+                  <li>
+                    <p>진료시간</p>
+                    <p>10:00 ~ 18:00</p>
+                  </li>
+                  <li>
+                    <p>점심시간(평일)</p>
+                    <p>12:45 ~ 14:00</p>
+                  </li>
+                  <li>
+                    <p>토요일</p>
+                    <p>10:00 ~ 14:00</p>
+                  </li>
+                  <li>
+                    <p>*일요일/공휴일은 휴진</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="mobile_add">
+                <i class="fa-solid fa-phone"></i>
+                <p class="name">주소</p>
+                <p>서울 강서구 화곡동 1066-20</p>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="map">
+            <!-- 1. 지도 노드 -->
+            <div
+              id="daumRoughmapContainer1739777181236"
+              class="root_daum_roughmap root_daum_roughmap_landing"
+            ></div>
+            <!-- 2. 설치 스크립트 -->
+            <script
+              charset="UTF-8"
+              class="daum_roughmap_loader_script"
+              src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
+            ></script>
+            <!-- 3. 실행 스크립트 -->
+            <script charset="UTF-8">
+              new daum.roughmap.Lander({
+                timestamp: "1739777181236",
+                key: "2n3cx",
+                mapWidth: "450",
+                mapHeight: "250",
+              }).render();
+            </script>
+            <p>서울 강서구 화곡동 1066-20</p>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="social">
+        <li>
+          <a href="#"
+            ><i class="fa-brands fa-instagram"></i> <span>인스타</span></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fa-solid fa-message"></i> <span>카카오톡</span></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-blog"></i> <span>블로그</span></a>
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fa-solid fa-tower-observation"></i>
+            <span>네이버예약</span></a
+          >
+        </li>
+      </ul>
+    </footer>
+
+    <!--bottom fixed-->
+    <div id="fixed">
+      <h1 class="logo">
+        <a href="index.html"><img src="img/LOGO.png" alt="다흰치과 로고" /></a>
+      </h1>
+      <div class="text_box">
+        <input
+          type="text"
+          onfocus="if(this.value =='이름') this.value='';"
+          onblur="if(this.value =='') this.value='이름';"
+          value="이름"
+        />
+        <input
+          type="text"
+          onfocus="if(this.value =='전화번호') this.value='';"
+          onblur="if(this.value =='') this.value='전화번호';"
+          value="전화번호"
+        /><br />
+        <input
+          class="counsel"
+          type="text"
+          onfocus="if(this.value =='상담내용을 입력해주세요') this.value='';"
+          onblur="if(this.value =='') this.value='상담내용을 입력해주세요';"
+          value="상담내용을 입력해주세요"
+        />
+      </div>
+      <div class="check_box">
+        <input type="checkbox" name="information" value="information" />
+        <p>개인 정보 처리 방침 <br />약관 보기</p>
+        <div class="button"><a href="#">문의하기</a></div>
+      </div>
+    </div>
+    <div id="mo_fix">
+      <input
+        type="text"
+        onfocus="if(this.value =='이름') this.value='';"
+        onblur="if(this.value =='') this.value='이름';"
+        value="이름"
+      />
+      <input
+        type="text"
+        onfocus="if(this.value =='전화번호') this.value='';"
+        onblur="if(this.value =='') this.value='전화번호';"
+        value="전화번호"
+      /><br />
+      <input
+        class="counsel"
+        type="text"
+        onfocus="if(this.value =='상담내용') this.value='';"
+        onblur="if(this.value =='') this.value='상담내용';"
+        value="상담내용"
+      />
+      <div class="button"><a href="#">문의하기</a></div>
+      </div>
+    </div>
+
+    <!--up fixed-->
+    <div id="fix">
+      <div class="up">
+        <a href="index.html"><i class="fa-solid fa-chevron-up"></i></a>
+      </div>
+      <div class="coun">
+        1:1
+      </div>
+    </div>
+
+    <!--mobile script-->
     <script>
-      //header 배경 흰색
-      $("header").on("mouseover", function () {
-        $("header #main").css({
-          "background-color": "rgba(255, 255, 255, 0.8)",
-          transition: "0.5s",
-        });
+      $("#fix .coun").on("click", function () {
+        $("#mo_fix").fadeToggle(200);
       });
-      $("header").on("mouseleave", function () {
-        $("header #main").css({
-          "background-color": "rgba(255, 255, 255, 0.5)",
-          transition: "0.5s",
-        });
-        $("header #sub ul").css({ display: "none" });
-      });
-
-      //서브메뉴 보이기
-      $("header #main .hos").on("mouseover", function () {
-        $("header #sub ul").css({ display: "none" });
-      });
-      $("header #main .doc").on("mouseover", function () {
-        $("header #sub ul").css({ display: "none" });
-        $("header #sub .doc").fadeIn(500);
-        $("header #sub .doc").css({ display: "flex" });
-      });
-      $("header #main .con").on("mouseover", function () {
-        $("header #sub ul").css({ display: "none" });
-        $("header #sub .con").fadeIn(500);
-        $("header #sub .con").css({ display: "flex" });
-      });
-      $("header #main .rev").on("mouseover", function () {
-        $("header #sub ul").css({ display: "none" });
-        $("header #sub .rev").fadeIn(500);
-        $("header #sub .rev").css({ display: "flex" });
-      });
-      $("header #main .comu").on("mouseover", function () {
-        $("header #sub ul").css({ display: "none" });
-        $("header #sub .comu").fadeIn(500);
-        $("header #sub .comu").css({ display: "flex" });
-      });
-
-      /*mobile menu*/
-      $("header #main .ham").on("click", function () {
-        $("header #main .mobile_menu").slideDown(1000);
-        $("header #main .mobile_menu").css({ display: "flex" });
-        $("header #main .ham").css({ display: "none" });
-        $("header #main .logo").css({ display: "none" });
-      });
-      $("header #main .close").on("click", function () {
-        $("header #main .mobile_menu").css({ display: "none" });
-        $("header #main .ham").fadeIn();
-        $("header #main .logo").fadeIn();
+      $("#mo_fix").on("mouseleave", function () {
+        $(this).fadeOut(200);
       });
     </script>
   </body>
