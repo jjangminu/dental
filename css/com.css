@@ -1258,104 +1258,107 @@ footer .social a {
   padding: 10px 0px;
 }
 
-/*bottom_fixed*/
-#mo_fix {
-display: none;
+ /*bottom_fixed*/
+ #mo_fix {
+  display: none;
 }
 #fixed {
-background-color: white;
-width: 100%;
-position: fixed;
-bottom: 0px;
-padding: 15px 0px;
-box-sizing: border-box;
-display: flex;
-justify-content: center;
-align-items: center;
-z-index: 8;
-gap: 50px;
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  padding: 15px 0px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 8;
+  gap: 200px;
 }
 #fixed .logo {
-width: 70px;
-height: 40px;
-padding-bottom: 5px;
+  width: 90px;
+  height: 50px;
+  padding-bottom: 5px;
 }
 #fixed .text_box {
-color: #5b5b5b;
-width: 200px;
-text-align: center;
+  color: #5b5b5b;
+  width: 300px;
+  text-align: center;
 }
 #fixed .text_box input {
-padding: 5px 2px;
-border: 1px solid #5b5b5b;
-width: 90px;
-font-size: 0.6rem;
+  padding: 5px 2px;
+  border: 1px solid #5b5b5b;
+  width: 141px;
+  font-size: 0.7rem;
 }
 #fixed .text_box input:focus {
-outline: none;
+  outline: none;
 }
 #fixed .text_box .counsel {
-width: 192px;
-margin-top: 7px;
+  width: 292px;
+  margin-top: 7px;
 }
 #fixed .check_box {
-display: flex;
-align-items: center;
-font-size: 0.7rem;
+  display: flex;
+  font-size: 0.9rem;
+  align-items: center;
+  font-size: 0.7rem;
 }
 #fixed .check_box input {
-appearance: none;
-box-sizing: border-box;
-background-clip: content-box;
-padding: 3px;
-width: 15px;
-height: 15px;
-border: 1px solid #5b5b5b;
-cursor: pointer;
+  appearance: none;
+  box-sizing: border-box;
+  background-clip: content-box;
+  padding: 3px;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #5b5b5b;
+  cursor: pointer;
 }
 #fixed .check_box input:checked {
-border-color: #6099ee;
-background-color: #6099ee;
+  border-color: #6099ee;
+  background-color: #6099ee;
 }
 #fixed .check_box p {
-margin: 0px 15px 0px 5px;
+  margin: 0px 15px 0px 10px;
 }
 #fixed .check_box .button {
-width: 80px;
-text-align: center;
-background-color: #6099ee;
-border-radius: 15px;
+  width: 130px;
+  text-align: center;
+  background-color: #6099ee;
+  border-radius: 12px;
 }
 #fixed .check_box .button a {
-display: block;
-color: white;
-padding: 12px 0px;
-font-weight: bolder;
-font-size: 0.7rem;
+  display: block;
+  color: white;
+  padding: 12px 0px;
+  font-weight: bolder;
+  font-size: 0.8rem;
 }
 #fixed .check_box .button a:hover {
-background-color: white;
-border: 1px solid #6099ee;
-color: #6099ee;
-border-radius: 12px;
+  background-color: white;
+  border: 1px solid #6099ee;
+  color: #6099ee;
+  border-radius: 12px;
 }
 
 /*up_fixed*/
 #fix .up {
-position: fixed;
-bottom: 80px;
-right: 35px;
-z-index: 9;
-background-color: #6099ee;
-width: 40px;
-padding: 10px 0px;
-border-radius: 50%;
-text-align: center;
+  position: fixed;
+  bottom: 60px;
+  right: 35px;
+  z-index: 9;
+  font-size: 25px;
+  background-color: #6099ee;
+  width: 48px;
+  padding: 10px 0px;
+  border-radius: 50%;
+  text-align: center;
 }
 #fix .up a {
-color: white;
+  color: white;
 }
 #fix .coun {
-display: none;
+  display: none;
 }
+
 }
