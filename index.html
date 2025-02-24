@@ -38,9 +38,9 @@
         </div>
         <div class="mobile_menu">
           <ul class="menu">
-            <li class="hos"><a href="#">병원소개</a></li>
+            <li class="hos"><a href="introduction.html">병원소개</a></li>
             <li class="doc"><a href="doctor.html">의료진소개</a></li>
-            <li class="con"><a href="#">진료안내</a></li>
+            <li class="con"><a href="depart.html">진료안내</a></li>
             <li class="rev"><a href="review.html">의료후기</a></li>
             <li class="comu"><a href="community.html">커뮤니티</a></li>
           </ul>
@@ -80,9 +80,21 @@
     <div id="visual">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="img/visual01.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="img/visual02.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="img/visual03.jpg" alt=""></div>
+          <div class="swiper-slide">
+            <img class="bg" src="img/index_visual01.png" alt="진료실 의사 사진">
+            <h3 class="first_txt">보다 더 <span>편안한 치료</span>를 <br>약속합니다</h3>
+            <img class="doctor" src="img/doctor_1.png" alt="강건 대표원장">
+          </div>
+          <div class="swiper-slide">
+            <div class="wrap3"><img class="bg" src="img/index_visual02.png" alt="할인 광고"></div>
+          </div>
+          <div class="swiper-slide">
+            <img  class="bg" src="img/index_visual03.png" alt="병원 외관 사진">
+            <div class="detail">
+              <h2>25년<br>임상경력</h2>
+              <p>오랜 경험을 통한 안전한 시술로<br>만족도 높은 결과를 보여드리겠습니다.</p>
+            </div>
+          </div>
         </div>
         <div class="swiper-scrollbar"></div>
       </div>
@@ -92,35 +104,34 @@
     <div id="container">
       <!--container01-->
       <div id="con01">
-        <p>
-          <span>어디가 <b>불편하신가요?</b></span
-          ><br />
+        <p class="tittle">
+          <span>어디가 <b>불편하신가요?</b></span><br />
           증상을 선택하시면 자세한 정보를 확인할 수 있어요.
         </p>
         <ul class="icons">
           <li class="icon06">
-            <img src="img/con01_6.svg" alt="충치" />
-            <p>이에 검은 얼룩이 있어요</p>
+            <a href="#"><img src="img/con01_6.svg" alt="충치" />
+            <p>이에 검은 얼룩이 있어요</p></a>
           </li>
           <li class="icon05">
-            <img src="img/con01_1.svg" alt="사랑니" />
-            <p>사랑니가 아파요</p>
+            <a href=""><img src="img/con01_1.svg" alt="사랑니" />
+            <p>사랑니가 아파요</p></a>
           </li>
           <li class="icon04">
-            <img src="img/con01_2.svg" alt="" />
-            <p>이빨이 노란색이에요</p>
+            <a href=""><img src="img/con01_2.svg" alt="" />
+            <p>이빨이 노란색이에요</p></a>
           </li>
           <li class="icon03">
-            <img src="img/con01_5.svg" alt="" />
-            <p>이가 깨졌어요</p>
+            <a href=""><img src="img/con01_5.svg" alt="" />
+            <p>이가 깨졌어요</p></a>
           </li>
           <li class="icon02">
-            <img src="img/con01_4.svg" alt="" />
-            <p>이가 안 예뻐요</p>
+            <a href=""><img src="img/con01_4.svg" alt="" />
+            <p>이가 안 예뻐요</p></a>
           </li>
           <li class="icon01">
-            <img src="img/con01_3.svg" alt="임플란트" />
-            <p>이가 깨지고 잇몸이 아파요</p>
+            <a href=""><img src="img/con01_3.svg" alt="임플란트" />
+            <p>이가 깨지고 잇몸이 아파요</p></a>
           </li>
         </ul>
         <ul class="button">
@@ -195,10 +206,10 @@
             </div>
             <div class="swiper-slide im03">
               <ul>
-                <li><img src="img/con03_05.png" alt="" /><p class="ba">2021년 12월</p></li>
+                <li><img src="img/con03_05.png" alt="" /><p class="ba">2021년 12월</p><h4>전체임플란트</h4></li>
                 <li><img src="img/con03_06.png" alt="" /><p class="ba">2023년 4월</p></li>
               </ul>
-              <h4>전체임플란트</h4>
+              
             </div>
           </div>
           <div class="swiper-button-next"></div>
@@ -208,19 +219,34 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide smile01">
               <ul>
-                <li><img src="img/con03_07.png" alt="" /><p class="ba">2018년 7월</p><h4>돌출입교정 <span>클리피씨 장치 · 치료기간 1년</span></h4></li>
-                <li><img src="img/con03_08.png" alt="" /><p class="ba">2019년 6월</p></li>
+                <li>
+                  <img src="img/con03_07.png" alt="" />
+                  <p class="ba">2018년 7월</p>
+                  <h4>돌출입교정 <span>클리피씨 장치 · 치료기간 1년</span></h4>
+                </li>
+                <li>
+                  <img src="img/con03_08.png" alt="" />
+                  <p class="ba">2019년 6월</p>
+                </li>
               </ul>
             </div>
-            <div class="swiper-slide smile02">
+            <div class="swiper-slide  smile02">
               <ul>
-                <li><img src="img/con03_09.png" alt="" /><p class="ba">2018년 7월</p><h4>돌출입교정 <span>클리피씨 장치 · 치료기간 2년</span></span></h4></li>
-                <li><img src="img/con03_10.png" alt="" /><p class="ba">2019년 6월</p></li>
+                <li>
+                  <img src="img/con03_09.png" alt="" />
+                  <p class="ba">2018년 7월</p>
+                  <h4>돌출입교정 <span>클리피씨 장치 · 치료기간 2년</span></span></h4>
+                </li>
+                <li>
+                  <img src="img/con03_10.png" alt="" />
+                  <p class="ba">2019년 6월</p>
+                </li>
               </ul>
             </div>
             <div class="swiper-slide smile03">
               <ul>
-                <li><img src="img/con03_11.png" alt="" /><p class="ba">2018년 7월</p><h4>무턱교정  <span>세라믹 장치 치료기간 1년</span></h4></li>
+                <li>
+                  <img src="img/con03_11.png" alt="" /><p class="ba">2018년 7월</p><h4>무턱교정  <span>세라믹 장치 치료기간 1년</span></h4></li>
                 <li><img src="img/con03_12.png" alt="" /><p class="ba">2019년 6월</p></li>
               </ul>
             </div>
@@ -233,20 +259,20 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide lami01">
               <ul>
-                <li><img src="img/con03_09.png" alt="" /><p class="ba">2018년 7월</p><h4>돌출입교정 <span>클리피씨 장치 · 치료기간 2년</span></span></h4></li>
-                <li><img src="img/con03_10.png" alt="" /><p class="ba">2019년 6월</p></li>
+                <li><img src="img/con03_13.png" alt="" /><p class="ba">2019년 2월</p><h4>무삭제 라미네이트</h4></li>
+                <li><img src="img/con03_14.png" alt="" /><p class="ba">2019년 11월</p></li>
               </ul>
             </div>
             <div class="swiper-slide lami02">
               <ul>
-                <li><img src="img/con03_09.png" alt="" /><p class="ba">2018년 7월</p><h4>돌출입교정 <span>클리피씨 장치 · 치료기간 2년</span></span></h4></li>
-                <li><img src="img/con03_10.png" alt="" /><p class="ba">2019년 6월</p></li>
+                <li><img src="img/con03_15.png" alt="" /><p class="ba">2021년 5월</p><h4>무삭제 라미네이트</h4></li>
+                <li><img src="img/con03_16.png" alt="" /><p class="ba">2022년 3월</p></li>
               </ul>
             </div>
             <div class="swiper-slide lami03">
               <ul>
-                <li><img src="img/con03_09.png" alt="" /><p class="ba">2018년 7월</p><h4>돌출입교정 <span>클리피씨 장치 · 치료기간 2년</span></span></h4></li>
-                <li><img src="img/con03_10.png" alt="" /><p class="ba">2019년 6월</p></li>
+                <li><img src="img/con03_17.png" alt="" /><p class="ba">2021년 7월</p><h4>벌어진치아 무삭제 라미네이트</h4></li>
+                <li><img src="img/con03_18.png" alt="" /><p class="ba">2022년 6월</p></li>
               </ul>
             </div>
           </div>
@@ -258,20 +284,20 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide basic01">
               <ul>
-                <li><img src="img/con03_09.png" alt="" /><p class="ba">2018년 7월</p><h4>돌출입교정 <span>클리피씨 장치 · 치료기간 2년</span></span></h4></li>
-                <li><img src="img/con03_10.png" alt="" /><p class="ba">2019년 6월</p></li>
+                <li><img src="img/con03_19.png" alt="" /><p class="ba">2017년 4월</p><h4>스케일링</h4></li>
+                <li><img src="img/con03_20.png" alt="" /><p class="ba">2017년 4월</p></li>
               </ul>
             </div>
             <div class="swiper-slide basic02">
               <ul>
-                <li><img src="img/con03_09.png" alt="" /><p class="ba">2018년 7월</p><h4>돌출입교정 <span>클리피씨 장치 · 치료기간 2년</span></span></h4></li>
-                <li><img src="img/con03_10.png" alt="" /><p class="ba">2019년 6월</p></li>
+                <li><img src="img/con03_21.png" alt="" /><p class="ba">2017년 2월</p><h4>사랑니 발치</h4></li>
+                <li><img src="img/con03_22.png" alt="" /><p class="ba">2017년 3월</p></li>
               </ul>
             </div>
             <div class="swiper-slide basic03">
               <ul>
-                <li><img src="img/con03_09.png" alt="" /><p class="ba">2018년 7월</p><h4>돌출입교정 <span>클리피씨 장치 · 치료기간 2년</span></span></h4></li>
-                <li><img src="img/con03_10.png" alt="" /><p class="ba">2019년 6월</p></li>
+                <li><img src="img/con03_23.png" alt="" /><p class="ba">2020년 5월</p><h4>충치치료</h4></li>
+                <li><img src="img/con03_24.png" alt="" /><p class="ba">2020년 7월</p></li>
               </ul>
             </div>
           </div>

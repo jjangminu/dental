@@ -125,10 +125,10 @@ body {
 
   /*visual*/
   #visual {
-    background-color: rgb(233, 255, 233);
     width: 100%;
     height: 35vh;
     box-sizing: border-box;
+    background-color: #fff8ea;
   }
   #visual img {
     width: 100%;
@@ -146,7 +146,7 @@ body {
     justify-content: center;
     align-items: center;
   }
-  #visual .swiper-slide img {
+  #visual .swiper-slide .bg {
     display: block;
     width: 100%;
     height: 100%;
@@ -161,6 +161,41 @@ body {
   }
   #visual .swiper-scrollbar-drag {
     background: #ff8800;
+  }
+  #visual .doctor {
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    width: 180px;
+    height: 200px;
+  }
+  #visual .first_txt {
+    position: absolute;
+    color: white;
+    left: 40px;
+    top: 70px;
+    font-size: 1.2rem;
+    text-align: left;
+  }
+  #visual .first_txt span {
+    color: #6099ee;
+    font-size: 2rem;
+  }
+  #visual .detail {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #visual .detail h2 {
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+    border-bottom: 1px solid white;
+  }
+  #visual .detail p {
+    padding-top: 20px;
+    font-size: 0.7rem;
   }
 
   /*container*/
@@ -233,13 +268,13 @@ body {
     position: relative;
     transition: 0.5s;
     box-sizing: border-box;
+    color: white;
   }
   #con02 p {
     position: absolute;
     top: 170px;
     left: 15px;
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
-    color: white;
     font-size: 1.2rem;
     text-align: left;
     font-weight: 200;
@@ -263,12 +298,14 @@ body {
     font-size: 0.6rem;
   }
   #con02 .detail li {
-    color: #353535;
     border: 1px solid #d3d3d3;
     background-image: linear-gradient(to right, #d3d3d3, transparent);
     width: calc(100% / 3);
     padding: 20px 10px;
     cursor: pointer;
+  }
+  #con02 .detail .im {
+    color: #353535;
   }
   #con02 .detail .invi {
     background-image: none;
@@ -315,6 +352,15 @@ body {
     color: white;
     transition: 0.2s;
   }
+  #con03 h4 {
+    text-align: left;
+    margin-top: 115px;
+    color: #ff8800;
+  }
+  #con03 h4 span {
+    color: #5b5b5b;
+    font-size: 0.6rem;
+  }
 
   /*swiper*/
   .swiper {
@@ -344,7 +390,6 @@ body {
   #con03 .im_bar ul {
     display: flex;
     flex-direction: column;
-    background-color: orange;
     width: 80%;
     gap: 10px;
     height: 80%;
@@ -371,12 +416,6 @@ body {
     border-radius: 0px 0px 0px 15px;
     font-size: 0.6rem;
   }
-  #con03 .im_bar h4 {
-    text-align: left;
-    font-size: 1.1rem;
-    margin-top: 115px;
-    color: #ff8800;
-  }
 
   /*smile image*/
   #con03 .smile_bar {
@@ -385,7 +424,6 @@ body {
   #con03 .smile_bar ul {
     display: flex;
     flex-direction: column;
-    background-color: orange;
     width: 80%;
     gap: 10px;
     height: 80%;
@@ -412,12 +450,6 @@ body {
     border-radius: 0px 0px 0px 15px;
     font-size: 0.6rem;
   }
-  #con03 .smile_bar h4 {
-    text-align: left;
-    font-size: 1.1rem;
-    margin-top: 115px;
-    color: #ff8800;
-  }
 
   /*laminate*/
   #con03 .lami_bar {
@@ -426,7 +458,6 @@ body {
   #con03 .lami_bar ul {
     display: flex;
     flex-direction: column;
-    background-color: orange;
     width: 80%;
     gap: 10px;
     height: 80%;
@@ -453,12 +484,6 @@ body {
     border-radius: 0px 0px 0px 15px;
     font-size: 0.6rem;
   }
-  #con03 .lami_bar h4 {
-    text-align: left;
-    font-size: 1.1rem;
-    margin-top: 115px;
-    color: #ff8800;
-  }
 
   /*basic image*/
   #con03 .basic_bar {
@@ -467,7 +492,6 @@ body {
   #con03 .basic_bar ul {
     display: flex;
     flex-direction: column;
-    background-color: orange;
     width: 80%;
     gap: 10px;
     height: 80%;
@@ -493,12 +517,6 @@ body {
     padding: 5px;
     border-radius: 0px 0px 0px 15px;
     font-size: 0.6rem;
-  }
-  #con03 .basic_bar h4 {
-    text-align: left;
-    font-size: 1.1rem;
-    margin-top: 115px;
-    color: #ff8800;
   }
 
   /*con04*/
@@ -789,10 +807,10 @@ body {
 
   /*visual*/
   #visual {
-    background-color: rgb(233, 255, 233);
     width: 100%;
     height: 65vh;
     box-sizing: border-box;
+    background-color: #fff8ea;
   }
   #visual img {
     width: 100%;
@@ -810,7 +828,7 @@ body {
     justify-content: center;
     align-items: center;
   }
-  #visual .swiper-slide img {
+  #visual .swiper-slide .bg {
     display: block;
     width: 100%;
     height: 100%;
@@ -825,6 +843,41 @@ body {
   }
   #visual .swiper-scrollbar-drag {
     background: #ff8800;
+  }
+  #visual .doctor {
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    width: 380px;
+    height: 400px;
+  }
+  #visual .first_txt {
+    position: absolute;
+    color: white;
+    left: 80px;
+    top: 100px;
+    font-size: 2.5rem;
+    text-align: left;
+  }
+  #visual .first_txt span {
+    color: #6099ee;
+    font-size: 3rem;
+  }
+  #visual .detail {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #visual .detail h2 {
+    padding-bottom: 25px;
+    font-size: 2.2rem;
+    border-bottom: 1px solid white;
+  }
+  #visual .detail p {
+    padding-top: 25px;
+    line-height: 1.3rem;
   }
 
   /*container*/
@@ -929,16 +982,15 @@ body {
     position: relative;
     transition: 0.5s;
     box-sizing: border-box;
+    color: white;
   }
   #con02 p {
     position: absolute;
     top: 60px;
-    right: 60px;
-    color: #353535;
+    left: 60px;
     font-size: 1.5rem;
     text-align: left;
     font-weight: 200;
-    text-align: right;
   }
   #con02 .dental {
     display: none;
@@ -948,20 +1000,21 @@ body {
   }
   #con02 .detail {
     display: flex;
-    color: white;
     position: absolute;
     bottom: 0px;
     width: 100%;
     box-sizing: border-box;
-    font-size: 2vw;
+    font-size: 1.8vw;
   }
   #con02 .detail li {
-    color: #353535;
     border: 1px solid #d3d3d3;
     background-image: linear-gradient(to right, #d3d3d3, transparent);
     width: calc(100% / 3);
     padding: 30px 10px;
     cursor: pointer;
+  }
+  #con02 .detail .im {
+    color: #353535;
   }
   #con02 .detail .invi {
     background-image: none;
@@ -1006,6 +1059,16 @@ body {
     background-color: #ff8800;
     color: white;
     transition: 0.2s;
+  }
+  #con03 h4 {
+    margin-top: 15px;
+    color: #ff8800;
+    text-align: left;
+    font-size: 1.3rem;
+  }
+  #con03 h4 span {
+    color: #5b5b5b;
+    font-size: 0.9rem;
   }
 
   /*swiper*/
@@ -1062,12 +1125,6 @@ body {
     border-radius: 0px 0px 0px 25px;
     font-size: 0.9rem;
   }
-  #con03 .im_bar h4 {
-    margin-top: 15px;
-    color: #ff8800;
-    text-align: left;
-    font-size: 1.3rem;
-  }
 
   /*smile image*/
   #con03 .smile_bar {
@@ -1100,16 +1157,6 @@ body {
     padding: 10px;
     border-radius: 0px 0px 0px 25px;
     font-size: 0.9rem;
-  }
-  #con03 .smile_bar h4 {
-    margin-top: 15px;
-    color: #ff8800;
-    text-align: left;
-    font-size: 1.3rem;
-  }
-  #con03 .smile_bar span {
-    color: #5b5b5b;
-    font-size: 1rem;
   }
 
   /*laminate*/
@@ -1144,12 +1191,6 @@ body {
     border-radius: 0px 0px 0px 25px;
     font-size: 0.9rem;
   }
-  #con03 .lami_bar h4 {
-    margin-top: 15px;
-    color: #ff8800;
-    text-align: left;
-    font-size: 1.3rem;
-  }
 
   /*basic image*/
   #con03 .basic_bar {
@@ -1182,12 +1223,6 @@ body {
     padding: 10px;
     border-radius: 0px 0px 0px 25px;
     font-size: 0.9rem;
-  }
-  #con03 .basic_bar h4 {
-    margin-top: 15px;
-    color: #ff8800;
-    text-align: left;
-    font-size: 1.3rem;
   }
 
   /*con04*/
@@ -1503,15 +1538,15 @@ body {
 
   /*visual*/
   #visual {
-    background-color: rgb(233, 255, 233);
     width: 100%;
     height: 85vh;
     box-sizing: border-box;
+    background-color: #fff8ea;
   }
   #visual img {
     width: 100%;
-    height: 100%;
     padding: 0px;
+    height: 100%;
   }
   #visual .swiper {
     width: 100%;
@@ -1523,8 +1558,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
-  #visual .swiper-slide img {
+  #visual .swiper-slide .bg {
     display: block;
     width: 100%;
     height: 100%;
@@ -1540,6 +1576,49 @@ body {
   #visual .swiper-scrollbar-drag {
     background: #ff8800;
   }
+  #visual .doctor {
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    width: 670px;
+    height: 650px;
+  }
+  #visual .first_txt {
+    position: absolute;
+    color: white;
+    left: 100px;
+    font-size: 3rem;
+    text-align: left;
+  }
+  #visual .first_txt span {
+    color: #6099ee;
+    font-size: 3.5rem;
+  }
+  #visual .wrap {
+    width: 100%;
+    height: 100%;
+    background-color: #ff8800;
+  }
+  #visual .wrap img {
+    border-radius: 25px;
+  }
+  #visual .detail {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #visual .detail h2 {
+    padding-bottom: 25px;
+    font-size: 2.5rem;
+    border-bottom: 1px solid white;
+  }
+  #visual .detail p {
+    padding-top: 25px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
 
   /*container*/
   #container {
@@ -1549,18 +1628,19 @@ body {
   /*con01*/
   #con01 {
     text-align: center;
-    padding: 50px 0px;
+    padding: 30px 0px;
     width: 100%;
     height: 75vh;
     box-sizing: border-box;
     position: relative;
+    padding-top: 75px;
+  }
+  #con01 p {
+    line-height: 2rem;
   }
   #con01 p span {
     color: #6099ee;
     font-size: 2rem;
-  }
-  #con01 p {
-    line-height: 2rem;
   }
 
   /*icon*/
@@ -1639,12 +1719,12 @@ body {
     background-size: cover;
     position: relative;
     transition: 0.5s;
+    color: white;
   }
   #con02 p {
     position: absolute;
     bottom: 100px;
-    left: 100px;
-    color: white;
+    left: 80px;
     font-size: 2rem;
     text-align: left;
     font-weight: 200;
@@ -1656,18 +1736,19 @@ body {
     display: none;
   }
   #con02 .detail {
-    color: white;
     position: absolute;
     top: 0px;
     right: 50px;
   }
   #con02 .detail li {
-    color: #353535;
     padding: 87.6px 50px;
     border: 1px solid #d3d3d3;
     background-image: linear-gradient(to right, #d3d3d3, transparent);
     font-size: 1.2rem;
     cursor: pointer;
+  }
+  #con02 .detail .im {
+    color: #353535;
   }
   #con02 .detail .invi {
     background-image: none;
@@ -1712,6 +1793,16 @@ body {
     background-color: #ff8800;
     color: white;
     transition: 0.2s;
+  }
+  #con03 h4 {
+    margin: 20px 0px;
+    color: #ff8800;
+    text-align: left;
+    font-size: 1.5rem;
+  }
+  #con03 h4 span {
+    color: #5b5b5b;
+    font-size: 1.2rem;
   }
 
   /*swiper*/
@@ -1767,12 +1858,6 @@ body {
     padding: 10px;
     border-radius: 0px 0px 0px 25px;
   }
-  #con03 .im_bar h4 {
-    margin-top: 20px;
-    color: #ff8800;
-    text-align: left;
-    font-size: 1.5rem;
-  }
 
   /*smile image*/
   #con03 .smile_bar {
@@ -1804,12 +1889,6 @@ body {
     color: white;
     padding: 10px;
     border-radius: 0px 0px 0px 25px;
-  }
-  #con03 .smile_bar h4 {
-    margin-top: 20px;
-    color: #ff8800;
-    text-align: left;
-    font-size: 1.5rem;
   }
   #con03 .smile_bar span {
     color: #5b5b5b;
@@ -1846,12 +1925,6 @@ body {
     padding: 10px;
     border-radius: 0px 0px 0px 25px;
   }
-  #con03 .lami_bar h4 {
-    margin-top: 20px;
-    color: #ff8800;
-    text-align: left;
-    font-size: 1.5rem;
-  }
 
   /*basic image*/
   #con03 .basic_bar {
@@ -1883,12 +1956,6 @@ body {
     color: white;
     padding: 10px;
     border-radius: 0px 0px 0px 25px;
-  }
-  #con03 .basic_bar h4 {
-    margin-top: 20px;
-    color: #ff8800;
-    text-align: left;
-    font-size: 1.5rem;
   }
 
   /*con04*/
