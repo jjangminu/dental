@@ -938,7 +938,7 @@ color: #6099ee;
 
 
 #contents #con03 ul{display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; width: 100%; align-items: center;}
-#contents #con03 ul img{width: 280px;}
+#contents #con03 ul img{width: 280px; height: 200px;}
 #contents #con03 li{width: calc( 100% / 2 - 40px); height: 300px;}
 #contents #con03 .imgs{border: 2px solid #FF8800; width: 650px;}
 #contents #con03 .re01{display: flex; align-items: center; gap: 10px; justify-content: center;}
