@@ -64,6 +64,15 @@ $(function () {
     },
   });
 
+  $("#visual .vis01").on("mouseover", function () {
+    $("#visual .vis01 .first_txt").css({ opacity: "1", "margin-top": "0" });
+    $("#visual .vis01 .doctor").css({ opacity: "1", bottom: "0px" });
+  });
+  $("#visual .vis03").on("mouseover", function () {
+    $("#visual .vis03 h2").css({ "margin-top": "0", opacity: "1" });
+    $("#visual .vis03 p").css({ "margin-top": "0", opacity: "1" });
+  });
+
   /* con01 */
   $("#con01 .but01").on("click", function () {
     $("#con01 .icons li").css({
@@ -174,12 +183,17 @@ $(function () {
     $(this).css({ "background-color": "#ff8800" });
   });
   $("#con01 .icons li").on("mouseenter", function () {
+    i = $(this).index();
     $("#con01 .icons li").css({
       filter: "brightness(2)",
       transform: "scale(1)",
       transition: "0.5s",
       "z-index": "1",
     });
+    $("#con01 .button li").css({
+      "background-color": "rgba(96, 153, 238, 0.5",
+    });
+    $("#con01 .button li").eq(i).css({ "background-color": "#ff8800" });
     $(this).css({
       filter: "brightness(1)",
       transform: "scale(1.3)",
