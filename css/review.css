@@ -117,6 +117,9 @@ body {
   background-color: #6099ee;
 }
 
+
+
+
 /*모바일*/
 @media(max-width:600px){
  /*header*/
@@ -242,7 +245,7 @@ header #sub a:hover {
 #contents #con03 .imgg{border: #6099EE 2px solid; width: 100%;}
 #contents #con03 .re02 i{font-size: 30px;}
 #contents #con03 .re02{display: flex; align-items: center; gap: 10px; justify-content: center;}
-#contents #con03 h3{margin: 10px 0px 15px 15px; font-size: 15px;}
+#contents #con03 h3{margin: 10px 0px 15px 25px; font-size: 15px;}
 #contents #con03 .pp{display: flex;margin-bottom: 25px; margin-left: 25px; gap: 5px;}
 #contents #con03 .pp .heart{display: flex; gap: 5px; font-size: 15px;}
 #contents #con03 .pp .heart i{margin-top: 3px;}
@@ -468,9 +471,26 @@ footer .social span {
 }
 }
 
+@media(min-width:300px)  and (max-width:400px){
+  #contents #con02 ul{font-size: 12px;}
+  #contents #con03 .pp h4{font-size: 10px;}
+  #contents #con03 .pp .blue{font-size: 10px;}
+  #contents #con03{font-size: 10px;}
+  #contents #con03 h3{font-size: 10px; margin: 10px;}
+  #contents #con03 .pp{font-size: 10px; margin: 10px;}
+
+  #contents #con03 .imgs h3{font-size: 10px; margin: 10px;}
+  #contents #con03 .pp .blue{font-size: 10px;}
+  #contents #con03{font-size: 10px;}
+  #contents #con03 h3{font-size: 10px; margin: 10px;}
+  #contents #con03 .im .orange{font-size: 10px;}
+  #contents #con03 .im h4{font-size: 10px;}
+  #contents #con03 .im{margin: 10px;}
+}
+
 /*타블렛*/
 
-@media(min-width:600px) and (max-width:1200px){
+@media(min-width:600px) and (max-width:1220px){
  /*header*/
  header {
   position: fixed;
@@ -838,7 +858,8 @@ header #sub a:hover {
 }
 /*피시버전*/
 
-@media(min-width:1200px){
+
+@media(min-width:1220px){
   
 
 /*header*/
@@ -937,10 +958,10 @@ color: #6099ee;
 #contents #con02 ul{display: flex; justify-content: center; gap: 100px; margin: 80px; font-size: 30px; font-weight: bold; color: #5B5B5B;}
 
 
-#contents #con03 ul{display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; width: 100%; align-items: center;}
-#contents #con03 ul img{width: 280px; height: 200px;}
+#contents #con03 ul{display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; width: 95%; align-items: center; margin: 0px auto;}
+#contents #con03 ul img{width: 200px; height: 200px;}
 #contents #con03 li{width: calc( 100% / 2 - 40px); height: 300px;}
-#contents #con03 .imgs{border: 2px solid #FF8800; width: 650px;}
+#contents #con03 .imgs{border: 2px solid #FF8800; width: 580px;}
 #contents #con03 .re01{display: flex; align-items: center; gap: 10px; justify-content: center;}
 #contents #con03 .re01 i{font-size: 30px;}
 #contents #con03 h3{margin: 25px 0px 25px 30px;}
@@ -950,7 +971,7 @@ color: #6099ee;
 #contents #con03 .im h4{border-right: 2px solid #6099EE; padding-right: 5px;}
 #contents #con03 .im .orange{color: #FF8800;}
 
-#contents #con03 .imgg{border: #6099EE 2px solid; width: 650px;}
+#contents #con03 .imgg{border: #6099EE 2px solid; width: 580px;}
 #contents #con03 .re02 i{font-size: 30px;}
 #contents #con03 .re02{display: flex; align-items: center; gap: 10px; justify-content: center;}
 #contents #con03 h3{margin: 25px 0px 25px 30px;}
@@ -1204,10 +1225,27 @@ footer .social a {
 
 }
 
+/*기타*/
+@media(max-width:1350px) and (min-width:1200px){
+  #contents #con03 ul{display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; width: 100%; align-items: center; margin: 0px auto;}
+#contents #con03 ul img{width: 200px; height: 200px;}
+#contents #con03 li{width: calc( 100% / 2 - 40px); height: 300px; margin: 0px;}
+#contents #con03 .imgs{border: 2px solid #FF8800; width: 520px;}
+#contents #con03 .re01{display: flex; align-items: center; gap: 10px; justify-content: center;}
+#contents #con03 .re01 i{font-size: 30px;}
+#contents #con03 h3{margin: 25px 0px 25px 20px;}
+#contents #con03 .im{display: flex;margin-bottom: 25px; margin-left: 30px; gap: 5px;}
+#contents #con03 .im .heart{display: flex; gap: 5px;}
+#contents #con03 .im .heart i{margin-top: 3px;}
+#contents #con03 .im h4{border-right: 2px solid #6099EE; padding-right: 5px;}
+#contents #con03 .im .orange{color: #FF8800;}
+
+#contents #con03 .imgg{border: #6099EE 2px solid; width: 520px;}
+}
 
  /*제이쿼리 css class*/
 
  .under{border-bottom: 3px solid #6099ee; padding-bottom: 20px;}
- .zoom{transform: scale(1.3); transition: 0.5s; background-color: #fff;}
+ .zoom{transform: scale(1.2); transition: 0.5s; background-color: #fff;}
  #contents #con03 .down{background-color: #6099EE;}
  .down a{color: #fff;}
