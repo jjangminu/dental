@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--탭 아이콘-->
+    <link rel="icon" href="img/logo_dro.png" />
+    <link rel="apple-touch-icon" href="img/logo_dro.png" />
+    <title>다흰치과</title>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/doctorcustom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/doctorstyle.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <!--main menu-->
+      <div id="main">
+        <h1 class="logo">
+          <a href="index.html"
+            ><img src="img/LOGO.png" alt="다흰치과 로고"
+          /></a>
+        </h1>
+        <div class="ham">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="mobile_menu">
+          <ul class="menu">
+            <li class="hos"><a href="#">병원소개</a></li>
+            <li class="doc"><a href="doctor.html">의료진소개</a></li>
+            <li class="con"><a href="#">진료안내</a></li>
+            <li class="rev"><a href="review.html">의료후기</a></li>
+            <li class="comu"><a href="community.html">커뮤니티</a></li>
+          </ul>
+          <div class="xmark">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+      </div>
+      <!--sub menu-->
+      <div id="sub">
+        <ul class="doc">
+          <li><a href="#">병원장 소개</a></li>
+          <li><a href="#">의료진 소개</a></li>
+        </ul>
+        <ul class="con">
+          <li><a href="#">임플란트</a></li>
+          <li><a href="#">치아교정</a></li>
+          <li><a href="#">라미네이트/미백</a></li>
+          <li><a href="#">사랑니/충치</a></li>
+        </ul>
+        <ul class="rev">
+          <li><a href="#">임플란트</a></li>
+          <li><a href="#">치아교정</a></li>
+          <li><a href="#">라미네이트/미백</a></li>
+          <li><a href="#">사랑니/충치</a></li>
+        </ul>
+        <ul class="comu">
+          <li><a href="#">공지사항</a></li>
+          <li><a href="#">언론보도</a></li>
+          <li><a href="#">상담/예약</a></li>
+          <li><a href="#">이벤트</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!--visual-->
+    <div id="visual">
+        <img src="img/docvisual.jpg" alt="진료실 사진">
+        <h2>의료진 소개</h2>
+    </div>
+
+    <!--container-->
+    <div id="container">
+        <div id="con01">
+            <h2>
+                다흰 치과의<br>
+                <span>의료진</span>을 소개합니다.
+            </h2>
+        </div>
+        <div id="con02">
+          <div class="doctor">
+            <ul class="doctor_1">
+              <div class="button">
+                <div class="left"><i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="right">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+              </div>
+              <li>
+                <h4>Dahyun Doctor</h4>
+                <h3>강 건 <span>대표원장</span></h3>
+                <p>
+                  "치료를 받는 모든 환자분들이 편안하게 
+                  진료받으실 수 있도록 최선을 다하겠습니다."
+                </p>
+              </li>
+              <li>
+                <img src="img/doctor_1.png" alt="강건 대표원장">
+              </li>
+            </ul>
+            <ul class="doctor_2">
+              <div class="button">
+                <div class="left"><i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="right">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+              </div>
+              <li>
+                <img src="img/doctor_2.png" alt="송예훈 수석원장장">
+              </li>
+              <li>
+                <h4>Dahyun Doctor</h4>
+                <h3>송 예 훈 <span>수석원장</span></h3>
+                <p>
+                  "섬세한 손길로 건강한 미소를 되찾아드리겠습니다."
+                </p>
+              </li>
+            </ul>
+            <ul class="doctor_3">
+              <div class="button">
+                <div class="left"><i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="right">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+              </div>
+              <li>
+                <h4>Dahyun Doctor</h4>
+                <h3>한 누 리 <span>수석원장</span></h3>
+                <p>
+                  "진심이 담긴 진료로 언제나 밝은 미소로 맞이하겠습니다."
+                </p>
+              </li>
+              <li>
+                <img src="img/doctor_3.png" alt="한누리 수석원장">
+              </li>
+            </ul>
+          </div>
+          <div class="detail">
+            <div class="name">Dahyun</div>
+            <div class="tit">약력</div>
+            <ul class="detail_1">
+              <li>다흰치과 대표원장</li>
+              <li>서울대학교 치과대학 졸업</li>
+              <li>대한민국 100대 명의 '임플란트 부문' 선정</li>
+              <li>마이큐 무절개 임플란트 임상연자</li>
+              <li>대한구강악안명외과확회 정회원</li>
+              <li>오스템 임플란트 임상 자문위원</li>
+              <li>마이큐 임플란트 임상 자문위원</li>
+              <li>前) 이편한치과 대표원장</li>
+            </ul>
+            <ul class="detail_2">
+              <li>다흰치과 수석원장</li>
+              <li>서울대학교 치과대학 졸업</li>
+              <li>무삭제 심미보철 연구소장, 심미보철 센터장</li>
+              <li>인비절라인 인증의</li>
+              <li>미국 심미치과학회 정회원</li>
+              <li>대한치과보철학회 정회원</li>
+              <li>대한치과교정학회 정회원</li>
+              <li>前) 연세플란트치과 수석원장
+              </li>
+            </ul>
+            <ul class="detail_3">
+              <li>다흰치과 수석원장</li>
+              <li>서울대학교 치과대학 졸업</li>
+              <li>독일 비타잔파브릭 아시아 태평양 대표 연사</li>
+              <li>뉴욕대학교 프리덴탈 및 수학 전공</li>
+              <li>코넬 메디컬센터 구강외과 연수</li>
+              <li>서울대학교치과병원 종합진료실 근무</li>
+            </ul>
+          </div>
+        </div>
+        <div id="con03">
+            <h3>Director Thesis</h3>
+            <p>환자의 <b>최고 만족스러운 치과진료</b>를 위하여 <b>매주</b> 케이스 브리핑 및 논의를 하고 있습니다.</p>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/doc03_01.png" alt="논문"></div>
+                <div class="swiper-slide"><img src="img/doc03_02.png" alt="논문"></div>
+                <div class="swiper-slide"><img src="img/doc03_03.jpg" alt="논문"></div>
+                <div class="swiper-slide"><img src="img/doc03_04.jpg" alt="논문"></div>
+                <div class="swiper-slide"><img src="img/doc03_05.jpg" alt="논문"></div>
+                <div class="swiper-slide"><img src="img/doc03_06.jpg" alt="논문"></div>
+              </div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+        <div id="con04">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <ul class="wrap">
+                        <li><img src="img/doc10.jpg" alt="의사선생님"></li>
+                        <li class="detail">
+                            <h3>
+                                우리는 위임 진료가 없습니다
+                            </h3>
+                            <p>
+                                상담부터 진료 전 과정을 의사가 직접합니다. 
+                                심지어 스케일링도 의사가 직접 진행합니다
+                            </p>
+                        </li>
+                    </ul>
+                  </div>
+                  <div class="swiper-slide">
+                    <ul class="wrap">
+                        <li class="detail">
+                            <h3>
+                                당일 치료를 원칙으로 합니다.
+                            </h3>
+                            <p>
+                                레진, 인레이, 크라운 치료 시 감염을 최소화하기 위해 당일 원데이 치료를 합니다.</p>
+                        </li>
+                        <li><img src="img/doc11.jpg" alt="의사선생님"></li>
+                    </ul>
+                  </div>
+                  <div class="swiper-slide">
+                    <ul class="wrap">
+                        <li><img src="img/doc12.jpg" alt="의사선생님"></li>
+                        <li class="detail">
+                            <h3>
+                                대기 시간이 없습니다.
+                            </h3>
+                            <p>
+                                100% 사전 예약제로 운영되기 때문에 대기 시간 없이 바로 진료가 가능합니다.
+                            </p>
+                        </li>
+                    </ul>
+                  </div>
+                  <div class="swiper-slide">
+                    <ul class="wrap">
+                        <li class="detail">
+                            <h3>
+                                365일 매일 야간진료
+                            </h3>
+                            <p>
+                                100% 사전 예약제로 운영되기 때문에 대기 시간 없이 바로 진료가 가능합니다.
+                            </p>
+                        </li>
+                        <li><img src="img/doc13.jpg" alt="의사선생님"></li>
+                    </ul>
+                  </div>
+                  <div class="swiper-slide">
+                    <ul class="wrap">
+                        <li><img src="img/doc14.jpg" alt="의사선생님"></li>
+                        <li class="detail">
+                            <h3>
+                                합리적이고 부담 없는 치료
+                            </h3>
+                            <p>
+                                다양한 치아 보험사와의 연계를 통해 환자분들께 보다 합리적이고 부담 없는 치료를 제공합니다.
+                            </p>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer>
+      <ul id="top_de">
+        <li>
+          <ul class="detail">
+            <li>
+              <div class="call">
+                <i class="fa-solid fa-phone"></i>
+                <p class="tit">전화상담</p>
+                <h3>
+                  02-8625-2543<br />
+                  010-2878-0681
+                </h3>
+              </div>
+            </li>
+            <li>
+              <div class="kakao">
+                <i class="fa-solid fa-phone"></i>
+                <p class="tit">카톡상담</p>
+                <div>
+                  <div class="search">
+                    <p>다흰치과</p>
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                  <p>
+                    카카오 아이디 검색에서<br />
+                    다흰 치과를 검색하세요.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="time">
+                <i class="fa-solid fa-phone"></i>
+                <p class="tit">진료시간</p>
+                <ul>
+                  <li>
+                    <p>진료시간</p>
+                    <p>10:00 ~ 18:00</p>
+                  </li>
+                  <li>
+                    <p>점심시간(평일)</p>
+                    <p>12:45 ~ 14:00</p>
+                  </li>
+                  <li>
+                    <p>토요일</p>
+                    <p>10:00 ~ 14:00</p>
+                  </li>
+                  <li>
+                    <p>*일요일/공휴일은 휴진</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="mobile_add">
+                <i class="fa-solid fa-phone"></i>
+                <p class="name">주소</p>
+                <p>서울 강서구 화곡동 1066-20</p>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="map">
+            <!-- 1. 지도 노드 -->
+            <div
+              id="daumRoughmapContainer1739777181236"
+              class="root_daum_roughmap root_daum_roughmap_landing"
+            ></div>
+            <!-- 2. 설치 스크립트 -->
+            <script
+              charset="UTF-8"
+              class="daum_roughmap_loader_script"
+              src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
+            ></script>
+            <!-- 3. 실행 스크립트 -->
+            <script charset="UTF-8">
+              new daum.roughmap.Lander({
+                timestamp: "1739777181236",
+                key: "2n3cx",
+                mapWidth: "450",
+                mapHeight: "250",
+              }).render();
+            </script>
+            <p>서울 강서구 화곡동 1066-20</p>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="social">
+        <li>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i> <span>인스타</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa-solid fa-message"></i> <span>카카오톡</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa-solid fa-blog"></i> <span>블로그</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa-solid fa-tower-observation"></i>
+                <span>네이버예약</span>
+            </a>
+        </li>
+      </ul>
+    </footer>
+
+    <!--bottom fixed-->
+    <div id="fixed">
+        <h1 class="logo">
+          <a href="index.html"><img src="img/LOGO.png" alt="다흰치과 로고" /></a>
+        </h1>
+        <div class="text_box">
+          <input
+            type="text"
+            onfocus="if(this.value =='이름') this.value='';"
+            onblur="if(this.value =='') this.value='이름';"
+            value="이름"
+          />
+          <input
+            type="text"
+            onfocus="if(this.value =='전화번호') this.value='';"
+            onblur="if(this.value =='') this.value='전화번호';"
+            value="전화번호"
+          /><br />
+          <input
+            class="counsel"
+            type="text"
+            onfocus="if(this.value =='상담내용을 입력해주세요') this.value='';"
+            onblur="if(this.value =='') this.value='상담내용을 입력해주세요';"
+            value="상담내용을 입력해주세요"
+          />
+        </div>
+        <div class="check_box">
+          <input type="checkbox" name="information" value="information" />
+          <p>개인 정보 처리 방침 <br />약관 보기</p>
+          <div class="button"><a href="#">문의하기</a></div>
+        </div>
+      </div>
+      <div id="mo_fix">
+        <input
+          type="text"
+          onfocus="if(this.value =='이름') this.value='';"
+          onblur="if(this.value =='') this.value='이름';"
+          value="이름"
+        />
+        <input
+          type="text"
+          onfocus="if(this.value =='전화번호') this.value='';"
+          onblur="if(this.value =='') this.value='전화번호';"
+          value="전화번호"
+        /><br />
+        <input
+          class="counsel"
+          type="text"
+          onfocus="if(this.value =='상담내용') this.value='';"
+          onblur="if(this.value =='') this.value='상담내용';"
+          value="상담내용"
+        />
+        <div class="button"><a href="#">문의하기</a></div>
+        </div>
+      </div>
+  
+      <!--up fixed-->
+      <div id="fix">
+        <div class="up">
+          <a href="doctor.html"><i class="fa-solid fa-chevron-up"></i></a>
+        </div>
+        <div class="coun">
+          1:1
+        </div>
+      </div>
+  
+      <!--mobile script-->
+      <script>
+        $("#fix .coun").on("click", function () {
+          $("#mo_fix").fadeToggle(200);
+        });
+        $("#mo_fix").on("mouseleave", function () {
+          $(this).fadeOut(200);
+        });
+      </script>
+  </body>
+</html>
