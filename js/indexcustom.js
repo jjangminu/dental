@@ -74,6 +74,10 @@ $(function () {
   });
 
   /* con01 */
+  $("#con01").on("mouseenter", function (e) {
+    $(this).css({ opacity: "1" });
+    $("#con01 .tittle").css({ "margin-top": "0px" });
+  });
   $("#con01 .but01").on("click", function () {
     $("#con01 .icons li").css({
       filter: "brightness(2)",
@@ -294,5 +298,9 @@ $(function () {
     $("#con03 .swiper").hide();
     $("#con03 .basic_bar").fadeIn(200);
     $(this).css({ "background-color": "#ff8800", color: "white" });
+  });
+  $("#con03").on("mouseenter", function (e) {
+    $(this).css({ opacity: "1" });
+    $("#con03 .tit h3").css({ "margin-top": "0px" });
   });
 });
