@@ -25,6 +25,12 @@ $(function(){
         $(this).removeClass("down")
     })
     
+    $("#con02 li").on("mouseenter",function(){
+      $(this).stop().animate({"margin":"-15px"})
+    })
+    $("#con02 li").on("mouseleave",function(){
+      $(this).stop().animate({"margin":"0px"})
+    })
 })
 
 
