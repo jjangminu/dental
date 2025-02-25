@@ -213,7 +213,7 @@ header #sub a:hover {
 #contents #con01 .promise{margin: 50px 20px;}
 #contents #con01 .promise h3{font-size: 40px; color: #6099EE; margin-bottom: 30px;}
 #contents #con01 .news{display: flex; gap: 5px; justify-content: center;}
-#contents #con01 ul{}
+
 #contents #con01 .news li{ border-bottom: 3px #FF8800 dashed; font-size: 15px; line-height: 20px;margin-bottom: 30px;width: 150px;word-break: keep-all;}
 #contents #con01 .news img{width: 95%;}
 #contents #con01 .plus{position: absolute; bottom: 0%; right: 10%;}
