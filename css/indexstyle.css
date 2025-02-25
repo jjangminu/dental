@@ -19,6 +19,7 @@ body {
   font-size: 17px;
   --swiper-navigation-size: 17px;
   --swiper-theme-color: #ff8800;
+  word-break: keep-all;
 }
 .logo img {
   width: 100%;
@@ -1806,11 +1807,13 @@ body {
     right: 50px;
   }
   #con02 .detail li {
-    padding: 87.6px 50px;
+    padding: 91.7px 50px;
     border: 1px solid #d3d3d3;
     background-image: linear-gradient(to right, #d3d3d3, transparent);
     font-size: 1.2rem;
+    height: 100%;
     cursor: pointer;
+    width: 450px;
   }
   #con02 .detail .im {
     color: #353535;
