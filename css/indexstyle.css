@@ -165,7 +165,7 @@ body {
   }
   #visual .doctor {
     position: absolute;
-    bottom: -80px;
+    bottom: 0px;
     right: 10px;
     width: 180px;
     height: 200px;
