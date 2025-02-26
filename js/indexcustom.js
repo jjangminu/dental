@@ -219,8 +219,10 @@ $(function () {
       color: "#353535",
     });
     $("#con02").css({
-      background: "url(../img/con02_1.png) no-repeat center",
+      "background-image": "url(../img/con02_1.png)",
       "background-size": "cover",
+      "background-repeat": "no-repeat",
+      "background-position": "center",
     });
   });
   $("#con02 .invi").on("mouseenter", function () {
