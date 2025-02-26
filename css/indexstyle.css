@@ -31,7 +31,9 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: #6099ee;
 }
-
+.opa_image {
+  display: none;
+}
 /*mobile*/
 @media (max-width: 600px) {
   /*header*/
