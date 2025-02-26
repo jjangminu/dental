@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150.14 150.14">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #5c5c5c;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <rect class="cls-1" width="150.14" height="150.14"/>
+    <path class="cls-2" d="M76.47,38.22s4.47-6.88,19.92-5.21,21.91,17.41,21.91,17.41l-10.76,9.16,9.39,6.65-9.2,5.87,6.07,6.65-7.24,4.7,9.23,4.3s-12.46,30.85-19.7,30.85-6.95-7.53-6.95-7.53v-9.88s-2.64-11.54-14.18-11.54-13.7,11.84-13.7,11.84v10.96s.88,5.28-6.26,6.16-12.72-14.09-12.72-14.09c0,0-10.27-25.73-10.47-45.98s18-27.59,27.1-27,22.89,11.45,30.72,10.76"/>
+  </g>
+</svg>
