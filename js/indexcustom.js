@@ -222,6 +222,7 @@ $(function () {
       "background-image": "url(../img/con02_1.png)",
       "background-size": "cover",
       "background-repeat": "no-repeat",
+      "background-position": "center",
     });
   });
   $("#con02 .invi").on("mouseenter", function () {
@@ -235,6 +236,7 @@ $(function () {
       "background-image": "url(../img/con02_2.png)",
       "background-size": "cover",
       "background-repeat": "no-repeat",
+      "background-position": "center",
     });
     $(this).css({
       "background-image": "linear-gradient(to right, #d3d3d3, transparent)",
@@ -252,6 +254,7 @@ $(function () {
       "background-image": "url(../img/con02_3.png)",
       "background-size": "cover",
       "background-repeat": "no-repeat",
+      "background-position": "center",
     });
     $(this).css({
       "background-image": "linear-gradient(to right, #d3d3d3, transparent)",
