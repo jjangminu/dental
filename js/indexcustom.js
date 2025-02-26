@@ -231,7 +231,7 @@ $(function () {
     $("#con02 p").hide();
     $("#con02 .dental").fadeIn(500);
     $("#con02").css({
-      background: "url(../img/con02_3.png) no-repeat center",
+      background: "url(../img/con02_2.png) no-repeat center",
       "background-size": "cover",
     });
     $(this).css({
