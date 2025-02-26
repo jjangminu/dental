@@ -895,6 +895,9 @@ body {
     opacity: 0;
     transition: 0.8s;
   }
+  #visual .wrap3 {
+    height: 70%;
+  }
 
   /*container*/
   #container {
@@ -1651,6 +1654,9 @@ body {
     margin-top: -50px;
     transition: 0.8s;
     opacity: 0;
+  }
+  #visual .wrap3 {
+    height: 100%;
   }
 
   /*container*/
