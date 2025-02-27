@@ -218,10 +218,9 @@ $(function () {
       "background-image": "linear-gradient(to right, #d3d3d3, transparent)",
       color: "#353535",
     });
-    $("#con02").css({
-      background: "url(../img/con02_1.png) no-repeat center",
-      "background-size": "cover",
-    });
+    $("#con02 .bg2").fadeOut(500);
+    $("#con02 .bg3").fadeOut(500);
+    $("#con02 .bg1").fadeIn(500);
   });
   $("#con02 .invi").on("mouseenter", function () {
     $("#con02 ul li").css({
@@ -230,14 +229,13 @@ $(function () {
     });
     $("#con02 p").hide();
     $("#con02 .dental").fadeIn(500);
-    $("#con02").css({
-      background: "url(../img/con02_2.png) no-repeat center",
-      "background-size": "cover",
-    });
     $(this).css({
       "background-image": "linear-gradient(to right, #d3d3d3, transparent)",
       color: "#353535",
     });
+    $("#con02 .bg1").fadeOut(500);
+    $("#con02 .bg3").fadeOut(500);
+    $("#con02 .bg2").fadeIn(500);
   });
   $("#con02 .lami").on("mouseenter", function () {
     $("#con02 ul li").css({
@@ -246,14 +244,13 @@ $(function () {
     });
     $("#con02 p").hide();
     $("#con02 .nature").fadeIn(500);
-    $("#con02").css({
-      background: "url(../img/con02_3.png) no-repeat center",
-      "background-size": "cover",
-    });
     $(this).css({
       "background-image": "linear-gradient(to right, #d3d3d3, transparent)",
       color: "#353535",
     });
+    $("#con02 .bg1").fadeOut(500);
+    $("#con02 .bg2").fadeOut(500);
+    $("#con02 .bg3").fadeIn(500);
   });
 
   /* con03 */

@@ -31,7 +31,6 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: #6099ee;
 }
-
 /*mobile*/
 @media (max-width: 600px) {
   /*header*/
@@ -165,12 +164,10 @@ body {
   }
   #visual .doctor {
     position: absolute;
-    bottom: -80px;
+    bottom: 0px;
     right: 10px;
     width: 180px;
     height: 200px;
-    transition: 1s;
-    opacity: 0;
   }
   #visual .first_txt {
     position: absolute;
@@ -179,9 +176,6 @@ body {
     top: 70px;
     font-size: 1.2rem;
     text-align: left;
-    margin-top: 50px;
-    transition: 0.8s;
-    opacity: 0;
   }
   #visual .first_txt span {
     color: #6099ee;
@@ -198,16 +192,10 @@ body {
     padding-bottom: 20px;
     font-size: 1.5rem;
     border-bottom: 1px solid white;
-    margin-top: 30px;
-    transition: 0.8s;
-    opacity: 0;
   }
   #visual .detail p {
     padding-top: 20px;
     font-size: 0.7rem;
-    margin-top: -30px;
-    transition: 0.8s;
-    opacity: 0;
   }
 
   /*container*/
@@ -224,7 +212,6 @@ body {
     width: 100%;
     height: 35vh;
     box-sizing: border-box;
-    opacity: 0;
   }
   #con01 p span {
     color: #6099ee;
@@ -233,10 +220,6 @@ body {
   #con01 p {
     line-height: 1rem;
     font-size: 0.6rem;
-  }
-  #con01 .tittle {
-    margin-top: 50px;
-    transition: 0.8s;
   }
 
   /*icon*/
@@ -277,15 +260,25 @@ body {
 
   /*con02*/
   #con02 {
-    padding: 30px 0px;
     width: 100%;
     height: 35vh;
-    background: url(../img/con02_1.png) no-repeat center;
-    background-size: cover;
     position: relative;
     transition: 0.5s;
     box-sizing: border-box;
     color: white;
+  }
+  #con02 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  #con02 .bg2 {
+    display: none;
+  }
+  #con02 .bg3 {
+    display: none;
   }
   #con02 p {
     position: absolute;
@@ -337,13 +330,9 @@ body {
     padding: 30px 0px;
     width: 100%;
     height: 35vh;
-    opacity: 0;
-    transition: 0.8s;
   }
   #con03 h3 {
     font-size: 1.2rem;
-    margin-top: 50px;
-    transition: 0.8s;
   }
   #con03 h3 span {
     color: #6099ee;
@@ -915,6 +904,9 @@ body {
     opacity: 0;
     transition: 0.8s;
   }
+  #visual .wrap3 {
+    height: 70%;
+  }
 
   /*container*/
   #container {
@@ -1019,12 +1011,23 @@ body {
     padding: 30px 0px;
     width: 100%;
     height: 50vh;
-    background: url(../img/con02_1.png) no-repeat center;
-    background-size: cover;
     position: relative;
     transition: 0.5s;
     box-sizing: border-box;
     color: white;
+  }
+  #con02 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  #con02 .bg2 {
+    display: none;
+  }
+  #con02 .bg3 {
+    display: none;
   }
   #con02 p {
     position: absolute;
@@ -1649,14 +1652,6 @@ body {
     color: #6099ee;
     font-size: 3.5rem;
   }
-  #visual .wrap {
-    width: 100%;
-    height: 100%;
-    background-color: #ff8800;
-  }
-  #visual .wrap img {
-    border-radius: 25px;
-  }
   #visual .detail {
     color: white;
     position: absolute;
@@ -1679,6 +1674,9 @@ body {
     margin-top: -50px;
     transition: 0.8s;
     opacity: 0;
+  }
+  #visual .wrap3 {
+    height: 100%;
   }
 
   /*container*/
@@ -1778,14 +1776,24 @@ body {
 
   /*con02*/
   #con02 {
-    padding: 30px 0px;
     width: 100%;
-    height: 75vh;
-    background: url(../img/con02_1.png) no-repeat center;
-    background-size: cover;
+    height: 81.5vh;
     position: relative;
     transition: 0.5s;
     color: white;
+  }
+  #con02 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  #con02 .bg2 {
+    display: none;
+  }
+  #con02 .bg3 {
+    display: none;
   }
   #con02 p {
     position: absolute;

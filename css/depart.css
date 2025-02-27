@@ -138,6 +138,7 @@ body {
     gap: 2px;
     border-radius: 20px;
     flex-wrap: wrap;
+    z-index: 1;
   }
   #mo_fix input {
     width: 70px;
@@ -169,6 +170,7 @@ body {
 
   /*fix*/
   #fix {
+    z-index: 1;
     position: fixed;
     bottom: 40px;
     right: 20px;
@@ -209,7 +211,7 @@ body {
     position: relative;
   }
   #visual h2 {
-    font-size: 4rem;
+    font-size: 2.5rem;
     color: #fff;
     position: absolute;
     left: 50%;
@@ -227,7 +229,7 @@ body {
     margin: 60px;
   }
   #con1 h2 {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
   }
   #con1 span {
     color: #6099ee;
@@ -250,33 +252,33 @@ body {
     background-color: #6099ee;
   }
   #con2 #part01 img {
-    width: 25%;
+    width: 30%;
     object-fit: cover;
     border-radius: 50% 50% 0% 0%;
     position: absolute;
     left: 10%;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-40%);
   }
   #con2 #part01 .hos {
-    width: 60%;
+    width: 50%;
     color: #fff;
-    font-size: 1.3rem;
-    transform: translate(65%, 100%);
+    font-size: 1rem;
+    transform: translate(85%, 200%);
   }
   #con2 #part01 .hos span {
     font-weight: bold;
   }
   #con2 #part01 h2 {
-    width: 60%;
-    font-size: 1.5rem;
-    transform: translateX(65%);
+    width: 30%;
+    font-size: 1.2rem;
+    transform: translate(140%, 20%);
   }
   #con2 #part01 .icon {
+    width: 15%;
     display: flex;
     gap: 10px;
-    position: absolute;
-    left: 16.5%;
+    transform: translate(125%, 120%);
   }
 
   /*con2 part02*/
@@ -291,33 +293,34 @@ body {
     background-color: #48bb00;
   }
   #con2 #part02 img {
-    width: 25%;
+    width: 30%;
     object-fit: cover;
     border-radius: 50% 50% 0% 0%;
     position: absolute;
     left: 10%;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-40%);
   }
   #con2 #part02 .hos {
-    width: 60%;
+    width: 50%;
     color: #fff;
-    font-size: 1.3rem;
-    transform: translate(65%, 100%);
+    font-size: 1rem;
+    transform: translate(85%, 200%);
   }
   #con2 #part02 .hos span {
     font-weight: bold;
   }
   #con2 #part02 h2 {
-    width: 60%;
-    font-size: 1.5rem;
-    transform: translateX(65%);
+    width: 30%;
+    font-size: 1.2rem;
+    transform: translate(140%, 20%);
   }
+
   #con2 #part02 .icon {
+    width: 15%;
     display: flex;
     gap: 10px;
-    position: absolute;
-    left: 16.5%;
+    transform: translate(125%, 120%);
   }
 
   /*con2 part03*/
@@ -332,50 +335,51 @@ body {
     background-color: #ff8800;
   }
   #con2 #part03 img {
-    width: 25%;
+    width: 30%;
     object-fit: cover;
     border-radius: 50% 50% 0% 0%;
     position: absolute;
     left: 10%;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-40%);
   }
   #con2 #part03 .hos {
-    width: 60%;
+    width: 50%;
     color: #fff;
-    font-size: 1.3rem;
-    transform: translate(65%, 100%);
+    font-size: 1rem;
+    transform: translate(85%, 200%);
   }
   #con2 #part03 .hos span {
     font-weight: bold;
   }
   #con2 #part03 h2 {
-    width: 60%;
-    font-size: 1.5rem;
-    transform: translateX(65%);
+    width: 30%;
+    font-size: 1.2rem;
+    transform: translate(140%, 20%);
   }
   #con2 #part03 .icon {
+    width: 15%;
     display: flex;
     gap: 10px;
-    position: absolute;
-    left: 16.5%;
+    transform: translate(125%, 120%);
   }
 
   /*con3*/
   #con3 {
-    width: 90%;
+    width: 100%;
     margin: 50px auto;
   }
   #con3 h4 {
     font-weight: normal;
     font-size: 1.2rem;
+    margin: 0px 20px;
   }
   #con3 h4 span {
     border-top: 1px solid #5b5b5b;
   }
   #con3 h3 {
     font-size: 1.5rem;
-    margin: 20px 0px;
+    margin: 20px;
   }
   #con3 h3 span {
     color: #6099ee;
@@ -383,11 +387,11 @@ body {
 
   /*con3 every*/
   #con3 .every {
-    margin: 100px 0px;
+    margin: 100px 10px;
     display: flex;
     justify-content: space-between;
   }
-  #con3 .every h2 {
+  #con3 .every h3 {
     height: 100%;
     font-size: 3rem;
   }
@@ -400,7 +404,7 @@ body {
   }
   #con3 .pattern1 {
     width: 25%;
-    height: 150px;
+    height: 110px;
     border: 2px solid #ff8800;
     border-radius: 30% 0% 30% 0%;
     text-align: center;
@@ -410,16 +414,14 @@ body {
     position: relative;
   }
   #con3 .pattern1 h5 {
-    font-size: 1.2rem;
+    margin: 10px 0px;
+    font-size: 1rem;
   }
   #con3 .pattern1 p {
-    color: #5b5b5b;
-    font-size: 0.8rem;
-    word-break: keep-all;
+    display: none;
   }
   #con3 i {
     font-size: 2.5rem;
-    margin: 10px 0px;
   }
 
   /*con3 .pattern2*/
@@ -430,7 +432,7 @@ body {
   }
   #con3 .pattern2 {
     width: 25%;
-    height: 150px;
+    height: 110px;
     border: 2px solid #ff8800;
     border-radius: 30% 0% 30% 0%;
     text-align: center;
@@ -439,12 +441,11 @@ body {
     position: relative;
   }
   #con3 .pattern2 h5 {
-    font-size: 1.2rem;
+    margin: 10px 0px;
+    font-size: 1rem;
   }
   #con3 .pattern2 p {
-    font-size: 0.8rem;
-    word-break: keep-all;
-    color: #5b5b5b;
+    display: none;
   }
 
   /*con4*/
@@ -453,7 +454,7 @@ body {
     background-image: url(../img/sub4-visual-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 300px;
+    height: 200px;
     position: relative;
   }
   #con4 .smile {
@@ -471,7 +472,7 @@ body {
     border-top: 1px solid #5b5b5b;
   }
   #con4 .to {
-    font-size: 1.2rem;
+    font-size: 1rem;
     position: absolute;
     right: 0px;
     top: 60px;
@@ -504,15 +505,15 @@ body {
   #con5 .back {
     background-color: #6099ee;
     width: 100%;
-    height: 300px;
-    margin: 50px auto;
-    padding: 65px;
+    height: 250px;
+    margin: 30px auto;
+    padding: 50px;
     box-sizing: border-box;
   }
   #con5 .back h3,
   #con5 .back p {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   #con5 .back h3 {
     font-weight: normal;
@@ -557,13 +558,13 @@ body {
   #con6 .good p {
     color: #5b5b5b;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   #con6 h3 {
     position: absolute;
     right: 5.5%;
     top: 65%;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   #con6 .spa {
     color: #6099ee;
@@ -884,7 +885,7 @@ body {
     margin: 60px;
   }
   #con1 h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   #con1 span {
     color: #6099ee;
@@ -907,7 +908,7 @@ body {
     background-color: #6099ee;
   }
   #con2 #part01 img {
-    width: 20%;
+    width: 30%;
     object-fit: cover;
     border-radius: 50% 50% 0% 0%;
     position: absolute;
@@ -916,24 +917,24 @@ body {
     transform: translateY(-50%);
   }
   #con2 #part01 .hos {
-    width: 60%;
+    width: 55%;
     color: #fff;
-    font-size: 2rem;
-    transform: translate(55%, 45%);
+    font-size: 1.5rem;
+    transform: translate(77%, 100%);
   }
   #con2 #part01 .hos span {
     font-weight: bold;
   }
   #con2 #part01 h2 {
-    width: 60%;
-    font-size: 3rem;
-    transform: translateX(55%);
+    width: 20%;
+    font-size: 2rem;
+    transform: translate(210%);
   }
   #con2 #part01 .icon {
     display: flex;
     gap: 10px;
-    position: absolute;
-    left: 16.5%;
+    width: 15%;
+    transform: translate(135%, 70%);
   }
 
   /*con2 part02*/
@@ -948,7 +949,7 @@ body {
     background-color: #48bb00;
   }
   #con2 #part02 img {
-    width: 20%;
+    width: 30%;
     object-fit: cover;
     border-radius: 50% 50% 0% 0%;
     position: absolute;
@@ -957,24 +958,24 @@ body {
     transform: translateY(-50%);
   }
   #con2 #part02 .hos {
-    width: 60%;
+    width: 55%;
     color: #fff;
-    font-size: 2rem;
-    transform: translate(55%, 45%);
+    font-size: 1.5rem;
+    transform: translate(77%, 100%);
   }
   #con2 #part02 .hos span {
     font-weight: bold;
   }
   #con2 #part02 h2 {
-    width: 60%;
-    font-size: 3rem;
-    transform: translateX(55%);
+    width: 25%;
+    font-size: 2rem;
+    transform: translate(170%);
   }
   #con2 #part02 .icon {
     display: flex;
     gap: 10px;
-    position: absolute;
-    left: 16.5%;
+    width: 15%;
+    transform: translate(135%, 70%);
   }
 
   /*con2 part03*/
@@ -989,7 +990,7 @@ body {
     background-color: #ff8800;
   }
   #con2 #part03 img {
-    width: 20%;
+    width: 30%;
     object-fit: cover;
     border-radius: 50% 50% 0% 0%;
     position: absolute;
@@ -998,41 +999,42 @@ body {
     transform: translateY(-50%);
   }
   #con2 #part03 .hos {
-    width: 60%;
+    width: 55%;
     color: #fff;
-    font-size: 2rem;
-    transform: translate(55%, 45%);
+    font-size: 1.5rem;
+    transform: translate(77%, 100%);
   }
   #con2 #part03 .hos span {
     font-weight: bold;
   }
   #con2 #part03 h2 {
-    width: 60%;
-    font-size: 3rem;
-    transform: translateX(55%);
+    width: 25%;
+    font-size: 2rem;
+    transform: translate(170%);
   }
   #con2 #part03 .icon {
     display: flex;
     gap: 10px;
-    position: absolute;
-    left: 16.5%;
+    width: 15%;
+    transform: translate(135%, 70%);
   }
 
   /*con3*/
   #con3 {
-    width: 90%;
+    width: 100%;
     margin: 50px auto;
   }
   #con3 h4 {
     font-weight: normal;
     font-size: 1.2rem;
+    margin: 0px 20px;
   }
   #con3 h4 span {
     border-top: 1px solid #5b5b5b;
   }
   #con3 h3 {
-    font-size: 2rem;
-    margin: 20px 0px;
+    font-size: 1.5rem;
+    margin: 20px;
   }
   #con3 h3 span {
     color: #6099ee;
@@ -1040,67 +1042,65 @@ body {
 
   /*con3 every*/
   #con3 .every {
-    margin: 100px 0px;
+    margin: 100px 10px;
     display: flex;
     justify-content: space-between;
   }
-  #con3 .every h2 {
+  #con3 .every h3 {
     height: 100%;
+    font-size: 3rem;
   }
 
   /*con3 .pattern1*/
   #con3 .pattern1 h2 {
     position: absolute;
-    top: -35px;
-    font-size: 2rem;
+    top: -25px;
+    font-size: 1.5rem;
   }
   #con3 .pattern1 {
-    width: 20%;
-    height: 250px;
+    width: 25%;
+    height: 135px;
     border: 2px solid #ff8800;
     border-radius: 30% 0% 30% 0%;
     text-align: center;
-    padding: 25px 10px;
+    padding: 20px;
     box-sizing: border-box;
     margin: 50px 0px;
     position: relative;
   }
   #con3 .pattern1 h5 {
-    font-size: 1.5rem;
+    margin: 10px 0px;
+    font-size: 1rem;
   }
   #con3 .pattern1 p {
-    color: #5b5b5b;
-    font-size: 1.2rem;
-    word-break: keep-all;
+    display: none;
   }
   #con3 i {
-    font-size: 3rem;
-    margin: 30px 0px;
+    font-size: 2.5rem;
   }
 
   /*con3 .pattern2*/
   #con3 .pattern2 h2 {
     position: absolute;
-    top: -35px;
-    font-size: 2rem;
+    top: -25px;
+    font-size: 1.5rem;
   }
   #con3 .pattern2 {
-    width: 20%;
-    height: 250px;
+    width: 25%;
+    height: 135px;
     border: 2px solid #ff8800;
     border-radius: 30% 0% 30% 0%;
     text-align: center;
-    padding: 25px 10px;
+    padding: 20px;
     box-sizing: border-box;
     position: relative;
   }
   #con3 .pattern2 h5 {
-    font-size: 1.5rem;
+    margin: 10px 0px;
+    font-size: 1rem;
   }
   #con3 .pattern2 p {
-    font-size: 1.2rem;
-    word-break: keep-all;
-    color: #5b5b5b;
+    display: none;
   }
 
   /*con4*/
@@ -1113,10 +1113,7 @@ body {
     position: relative;
   }
   #con4 .smile {
-    width: 45%;
-    position: absolute;
-    right: 5%;
-    top: 20%;
+    width: 55%;
   }
   #con4 h2 {
     font-weight: normal;
@@ -1130,34 +1127,16 @@ body {
     border-top: 1px solid #5b5b5b;
   }
   #con4 .to {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     position: absolute;
-    right: 20px;
+    right: 5%;
+    top: 30%;
+    text-align: right;
   }
   #con4 .correct {
-    width: 100%;
-    display: flex;
-    gap: 30px;
-    margin: 50px 0px;
-    position: absolute;
-    top: 50px;
+    display: none;
   }
-  #con4 .circle {
-    width: 25%;
-    height: 130px;
-    border: 2px solid #6099ee;
-    border-radius: 100%;
-    color: #6099ee;
-  }
-  #con4 .circle p {
-    text-align: center;
-    margin: 25% 0px;
-    padding: 10px;
-    box-sizing: border-box;
-    word-break: keep-all;
-    color: #6099ee;
-    font-size: 1.3rem;
-  }
+
   #con4 img {
     width: 10%;
     position: absolute;
@@ -1180,16 +1159,16 @@ body {
   }
   #con5 .back {
     background-color: #6099ee;
-    width: 70%;
+    width: 100%;
     height: 350px;
-    margin: 100px;
-    padding: 65px;
+    margin: 50px 0px;
+    padding: 55px;
     box-sizing: border-box;
   }
   #con5 .back h3,
   #con5 .back p {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   #con5 .back h3 {
     font-weight: normal;
@@ -1203,10 +1182,7 @@ body {
     margin: 50px 0px;
   }
   #con5 img {
-    width: 30%;
-    position: absolute;
-    top: 10%;
-    right: 10%;
+    display: none;
   }
 
   /*con6*/
@@ -1217,7 +1193,7 @@ body {
   }
   #con6 h4 {
     font-weight: normal;
-    font-size: 1.2rem;
+    font-size: 1rem;
     position: absolute;
     right: 5%;
     top: 5%;
@@ -1231,19 +1207,19 @@ body {
   }
   #con6 .good {
     position: absolute;
-    right: 20%;
+    right: 12%;
     top: 25%;
   }
   #con6 .good p {
     color: #5b5b5b;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   #con6 h3 {
     position: absolute;
-    right: 12%;
-    top: 65%;
-    font-size: 2.5rem;
+    right: 10%;
+    bottom: 40%;
+    font-size: 1.5rem;
   }
   #con6 .spa {
     color: #6099ee;
@@ -1329,6 +1305,9 @@ body {
 
   footer .map p {
     margin-top: 15px;
+  }
+  footer .map #daumRoughmapContainer1739777181236 {
+    z-index: 1;
   }
   footer .social {
     display: flex;
@@ -1775,6 +1754,7 @@ body {
     color: #5b5b5b;
     font-size: 1.5rem;
     word-break: keep-all;
+    display: block;
   }
   #con3 i {
     font-size: 5rem;
@@ -1804,6 +1784,7 @@ body {
     font-size: 1.5rem;
     word-break: keep-all;
     color: #5b5b5b;
+    display: block;
   }
 
   /*con4*/
@@ -2026,6 +2007,9 @@ body {
 
   footer .map p {
     margin-top: 15px;
+  }
+  footer .map #daumRoughmapContainer1739777181236 {
+    z-index: 1;
   }
   footer .social {
     display: flex;

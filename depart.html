@@ -7,7 +7,7 @@
     <link rel="apple-touch-icon" href="img/logo_dro.png" />
     <title>다흰치과</title>
     <link rel="stylesheet" href="css/depart.css" />
-    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/headercustom.js"></script>
     <link
       rel="stylesheet"
@@ -76,7 +76,7 @@
     <!--up fixed-->
     <div id="fix">
       <div class="up">
-        <a href="index.html"><i class="fa-solid fa-chevron-up"></i></a>
+        <a href="depart.html"><i class="fa-solid fa-chevron-up"></i></a>
       </div>
       <div class="coun">1:1</div>
     </div>
@@ -383,22 +383,6 @@
               id="daumRoughmapContainer1739777181236"
               class="root_daum_roughmap root_daum_roughmap_landing"
             ></div>
-            <!-- 2. 설치 스크립트 -->
-            <script
-              charset="UTF-8"
-              class="daum_roughmap_loader_script"
-              src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
-            ></script>
-
-            <!-- 3. 실행 스크립트 -->
-            <script charset="UTF-8">
-              new daum.roughmap.Lander({
-                timestamp: "1739777181236",
-                key: "2n3cx",
-                mapWidth: "450",
-                mapHeight: "250",
-              }).render();
-            </script>
             <p>서울 강서구 화곡동 1066-20</p>
           </div>
         </li>
@@ -421,5 +405,21 @@
         </li>
       </ul>
     </footer>
+
+     <!-- 2. 설치 스크립트 -->
+     <script
+     charset="UTF-8"
+     class="daum_roughmap_loader_script"
+     src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
+   ></script>
+    <!-- 3. 실행 스크립트 -->
+    <script charset="UTF-8">
+      new daum.roughmap.Lander({
+        timestamp: "1739777181236",
+        key: "2n3cx",
+        mapWidth: "450",
+        mapHeight: "250",
+      }).render();
+    </script>
   </body>
 </html>
